@@ -38,16 +38,30 @@ document.getElementById('header_selector').onclick = function(){
   }
 }
 
+let page_class = document.getElementById('Page_class').value
 if (screenWidth < 1088) {
   let second_half_header = ' '
-  second_half_header += `<div class="horizontal_line"></div>`
-  second_half_header += `<div class="navbar-end">`
-  second_half_header += `<a class="navbar-item category">Мои заявки</a>`
-  second_half_header += `<a class="navbar-item category">Профиль</a>`
-  second_half_header += `<a class="navbar-item category">Личные сообщения</a>`
-  second_half_header += `<a class="navbar-item category">Пополнить баланс</a>`
-  second_half_header += `<a class="button search">Найти работу</a>`
-  second_half_header += `<a class="button top">Поднять в топу</a>`
-  second_half_header += `</div>`
+  if (page_class == 'client') {
+    second_half_header += `<div class="horizontal_line"></div>`
+    second_half_header += `<div class="navbar-end">`
+    second_half_header += `<a class="navbar-item category">Мои заявки</a>`
+    second_half_header += `<a class="navbar-item category">Профиль</a>`
+    second_half_header += `<a class="navbar-item category">Личные сообщения</a>`
+    second_half_header += `<a class="navbar-item category">Пополнить баланс</a>`
+    second_half_header += `<a class="button search">Разместить задание</a>`
+    second_half_header += `</div>`
+  }
+  if (page_class == 'executor') {
+    second_half_header += `<div class="horizontal_line"></div>`
+    second_half_header += `<div class="navbar-end">`
+    second_half_header += `<a class="navbar-item category">Мои заявки</a>`
+    second_half_header += `<a class="navbar-item category">Профиль</a>`
+    second_half_header += `<a class="navbar-item category">Личные сообщения</a>`
+    second_half_header += `<a class="navbar-item category">Пополнить баланс</a>`
+    second_half_header += `<a class="button search">Найти работу</a>`
+    second_half_header += `<a class="button top">Поднять в топу</a>`
+    second_half_header += `</div>`
+  }
+
   document.getElementById('second_half_header').innerHTML  = second_half_header
 }

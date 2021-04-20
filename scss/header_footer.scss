@@ -125,6 +125,12 @@ a{
   margin-top: -7px;
   margin-left: 17px;
 }
+.vertical_line_category{
+  width: 1px;
+  height: 46px;
+  background-color: #F0F0F0;
+  margin-top: 10px;
+}
 .message{
     @include button_none;
     margin: 0 10px 0 25px;
@@ -253,6 +259,9 @@ a{
   }
 }
 @media (max-width: 1087px) {
+  .vertical_line_category, .my_application{
+    display: none;
+  }
   header{
     padding: 0 23px;
   }

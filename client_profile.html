@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/client_profile.css">
+</head>
+<body>
+  <input type="hidden" id="Page_class" value="client">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Главная</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="first_arrow">
+        <a href="#" class="application">Мои заявки</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="second_arrow">
+        <a href="#" class="profile">Профиль</a>
+      </div>
+
+      <div class="main_title">
+        <div class="title">Профиль</div>
+        <div class="editing">
+          <img src="./img/icons/my_application_icon.svg" alt="">
+          <p>Мои заявки</p>
+        </div>
+      </div>
+
+      <div class="general_information">
+        <p class="general_information_title">Общая информация</p>
+        <div class="general_information_content">
+          <div class="info_block">
+            <img src="./img/client_profile/inn.svg" alt="">
+            <div class="info">
+              <p class="info_title">ИНН</p>
+              <p class="info_number">7813250320</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="info_block">
+            <img src="./img/client_profile/info.svg" alt="">
+            <div class="info">
+              <p class="info_title">Название компании</p>
+              <p class="info_number">ОАО Технострой</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="info_block">
+            <img src="./img/client_profile/locatin.svg" alt="">
+            <div class="info">
+              <p class="info_title">Адрес компании</p>
+              <p class="info_number">Санкт-Петербург, Малая Морская улица, дом 18, строение 1, помещение 1-н офис №109</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="info_block">
+            <img src="./img/client_profile/mail.svg" alt="">
+            <div class="info">
+              <p class="info_title">E-mail</p>
+              <p class="info_number">tekhnostroi@yandex.ru</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="info_block">
+            <img src="./img/client_profile/inn.svg" alt="">
+            <div class="info">
+              <p class="info_title">ОГРН</p>
+              <p class="info_number">1167847197693</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="add_block">
+            <img src="./img/client_profile/plus.svg" alt="">
+            <div class="add">
+              <a href="#" class="add_title">Добавить описание компании</a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="add_block">
+            <img src="./img/client_profile/plus.svg" alt="">
+            <div class="add">
+              <a href="#" class="add_title">Добавить сайт</a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="add_block">
+            <img src="./img/client_profile/plus.svg" alt="">
+            <div class="add">
+              <a href="#" class="add_title">Загрузить ОГРН ИНН</a>
+              <img src="./img/client_profile/question.svg" alt="" >
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="add_block">
+            <img src="./img/client_profile/plus.svg" alt="">
+            <div class="add">
+              <a href="#" class="add_title">Загрузить логотип компании</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="child_accounts">
+        <div style="display: flex">
+          <p class="child_accounts_title">Дочерние аккаунты</p>
+          <img src="./img/client_profile/question.svg" alt="" class="question_img">
+        </div>
+        <div class="child_accounts_block">
+          <div class="child_accounts_block_title">
+            Название дочернего аккаунта
+          </div>
+          <div class="child_accounts_block_edit">
+            <div class="edit_block">
+              <img src="./img/client_profile/pen.svg" alt="">
+            </div>
+            <div class="delete_block">
+              <img src="./img/client_profile/delete.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="child_accounts_block">
+          <div class="child_accounts_block_title">
+            Название дочернего аккаунта
+          </div>
+          <div class="child_accounts_block_edit">
+            <div class="edit_block">
+              <img src="./img/client_profile/pen.svg" alt="">
+            </div>
+            <div class="delete_block">
+              <img src="./img/client_profile/delete.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="add_block">
+          <img src="./img/client_profile/plus.svg" alt="">
+          <div class="add">
+            <a href="#" class="add_title">Добавить сайт</a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/my_applications_executor.js"></script>
+</html>
