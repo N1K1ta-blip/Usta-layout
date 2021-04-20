@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/client_business_card_page.css">
+</head>
+<body>
+  <input type="hidden" id="Page_class" value="client">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Главная</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="">
+        <a href="#" class="applications">Моя страница</a>
+      </div>
+
+      <div class="description_company">
+        <div class="logo">
+          <img src="./img/components/logos/company_logo.png" alt="">
+        </div>
+        <div class="description">
+          <div class="company_name">
+            <p>ОАО Технострой</p>
+            <div class="online">
+              <img src="./img/components/online/online.svg" alt="">
+            </div>
+          </div>
+          <div class="verified_company">
+            <div class="verified">
+              <img src="./img/my_applications/verified_dark.svg" alt="">
+              <p>Проверенная компания</p>
+            </div>
+            <div class="system">
+              <img src="./img/my_applications/verified_light.svg" alt="">
+              <p>Системообразующая компания</p>
+            </div>
+          </div>
+          <div class="information">
+            <div class="reviews">
+              <img src="./img/my_applications/chat_icon.svg" alt="">
+              <p>117 отзывов</p>
+            </div>
+            <div class="local">
+              <img src="./img/my_applications/location.svg" alt="">
+              <p>Санкт-Петербург</p>
+            </div>
+            <div class="web">
+              <img src="./img/my_applications/web.svg" alt="">
+              <p>tekhnostroi.com</p>
+            </div>
+            <div class="button">Написать сообщение</div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="information_colomn">
+        <div class="reviews">
+          <img src="./img/my_applications/chat_icon.svg" alt="">
+          <p>117 отзывов</p>
+        </div>
+        <div class="local">
+          <img src="./img/my_applications/location.svg" alt="">
+          <p>Санкт-Петербург</p>
+        </div>
+        <div class="web">
+          <img src="./img/my_applications/web.svg" alt="">
+          <p>tekhnostroi.com</p>
+        </div>
+        <div class="button">Написать сообщение</div>
+      </div>
+      <div class="line2"></div>
+
+      <div class="about_company">
+        <div class="about_company_title">
+          <p>О компании</p>
+        </div>
+        <div class="about_company_text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nisi voluptate praesentium possimus adipisci at saepe ut distinctio est non, reiciendis eveniet vel qui reprehenderit, voluptas tempore placeat. Aliquam, nostrum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit optio corrupti iusto, assumenda numquam voluptatibus, expedita in soluta natus. Sed provident tenetur repudiandae amet mollitia pariatur harum blanditiis ipsa, odit.
+          </p>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="applications">
+        <div class="applications_title">Заявки компании</div>
+        <div class="executor__block review">
+          <div class="executor__block_secondPart">
+            <div class="executor__block_secondPart_firstHalf">
+              <img src="./img/components/logos/company_logo.png" alt="">
+              <div class="rating">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/noactive_star.svg" alt="">
+                <img src="./img/my_applications/chat.svg" alt="" class="chat" style="margin-bottom: -1px;">
+                <span>72 отзыва</span>
+                <div class="company">
+                  <p>ОАО Технострой</p>
+                  <img src="./img/my_applications/verified_dark.svg" alt="" class="verified_icon">
+                  <img src="./img/my_applications/verified_light.svg" alt="" class="verified_icon">
+                </div>
+                <p class="first_secret_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  exercitation ullamco laboris nisi ut aliquip ex ea...
+                </p>
+                <a class="button create1">
+                  Откликнуться на заявку
+                </a>
+              </div>
+            </div>
+            <div class="second_secret_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                incididunt ut labore et dolore magna aliqua. Ut enim ad
+                exercitation ullamco laboris nisi ut aliquip ex ea...
+              </p>
+            </div>
+            <div class="vertical_line_executor"></div>
+            <div class="executor__block_secondPart_description">
+              <div class="specialization">
+                <p class="title">Специализация</p>
+                <p class="content">Бригада Каменщиков
+                   Бригада Сварщиков
+                </p>
+              </div>
+              <div class="cost">
+                <p class="title">Стоимость работы</p>
+                <p class="content">
+                  5 000 рублей/м3
+                </p>
+              </div>
+              <div class="city">
+                <p class="title">Город</p>
+                <p class="content">
+                  Санкт-Петербург, Невский проспект, д.18,
+                  корпус 1
+                </p>
+              </div>
+            </div>
+            <a class="button create2">
+              Откликнуться на заявку
+            </a>
+          </div>
+        </div>
+        <div class="executor__block review">
+          <div class="executor__block_secondPart">
+            <div class="executor__block_secondPart_firstHalf">
+              <img src="./img/components/logos/company_logo.png" alt="">
+              <div class="rating">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/noactive_star.svg" alt="">
+                <img src="./img/my_applications/chat.svg" alt="" class="chat" style="margin-bottom: -1px;">
+                <span>72 отзыва</span>
+                <div class="company">
+                  <p>ОАО Технострой</p>
+                  <img src="./img/my_applications/verified_dark.svg" alt="" class="verified_icon">
+                  <img src="./img/my_applications/verified_light.svg" alt="" class="verified_icon">
+                </div>
+                <p class="first_secret_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  exercitation ullamco laboris nisi ut aliquip ex ea...
+                </p>
+                <a class="button create1">
+                  Откликнуться на заявку
+                </a>
+              </div>
+            </div>
+            <div class="second_secret_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                incididunt ut labore et dolore magna aliqua. Ut enim ad
+                exercitation ullamco laboris nisi ut aliquip ex ea...
+              </p>
+            </div>
+            <div class="vertical_line_executor"></div>
+            <div class="executor__block_secondPart_description">
+              <div class="specialization">
+                <p class="title">Специализация</p>
+                <p class="content">Бригада Каменщиков
+                   Бригада Сварщиков
+                </p>
+              </div>
+              <div class="cost">
+                <p class="title">Стоимость работы</p>
+                <p class="content">
+                  5 000 рублей/м3
+                </p>
+              </div>
+              <div class="city">
+                <p class="title">Город</p>
+                <p class="content">
+                  Санкт-Петербург, Невский проспект, д.18,
+                  корпус 1
+                </p>
+              </div>
+            </div>
+            <a class="button create2">
+              Откликнуться на заявку
+            </a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/my_applications_executor.js"></script>
+</html>
