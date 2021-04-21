@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/create_new_application.css">
+</head>
+<body>
+  <label for=""></label>
+  <input type="hidden" id="Page_class" value="executor">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Главная</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="">
+        <a href="#" class="applications">Создание заявки</a>
+      </div>
+
+      <div class="page_title">
+        <p class="title">Создать заявку</p>
+      </div>
+
+      <div class="numbers">
+        <div class="page_number_discription active">
+          <div class="page_number">01</div>
+        </div>
+        <div class="dashed_line"></div>
+        <div class="page_number_discription">
+          <div class="page_number">02</div>
+        </div>
+        <div class="dashed_line"></div>
+        <div class="page_number_discription">
+          <div class="page_number">03</div>
+        </div>
+        <div class="dashed_line"></div>
+        <div class="page_number_discription">
+          <div class="page_number">04</div>
+        </div>
+        <div class="dashed_line"></div>
+        <div class="page_number_discription">
+          <div class="page_number">05</div>
+        </div>
+      </div>
+
+      <div class="numbers_descriptions">
+        <div class="page_description active" style="margin-left: 0;">
+          <p class="page_description_title">Тип бригады</p>
+          <p class="page_description_text">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="page_description">
+          <p class="page_description_title">Условия работы</p>
+          <p class="page_description_text">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="page_description">
+          <p class="page_description_title">Сроки</p>
+          <p class="page_description_text">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="page_description">
+          <p class="page_description_title">Условия оплаты</p>
+          <p class="page_description_text">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="page_description">
+          <p class="page_description_title">Описание</p>
+          <p class="page_description_text">Lorem ipsum dolor sit amet</p>
+        </div>
+      </div>
+
+      <div class="filter_block">
+        <div class="specialization">
+          <div class="specialization_search" id="type_page" data-value="create_application">
+            <p>Тип бригады</p>
+            <span>выберите не более 2-х типов</span>
+          </div>
+          <div class="checboxes">
+            <div class="first_col">
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+                  <label for="bur">Буровики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="ovik" name="happy" value="yes" onclick="Check(this)">
+                  <label for="ovik">Вентиляционщики (ОВиК)</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="gidr" name="happy" value="yes" onclick="Check(this)">
+                  <label for="gidr">Гидроизоляционщики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="gryz" name="happy" value="yes" onclick="Check(this)">
+                  <label for="gryz">Грузчики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="road" name="happy" value="yes" onclick="Check(this)">
+                  <label for="road">Дорожники (Благоустройство)</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="stone" name="happy" value="yes" onclick="Check(this)">
+                  <label for="stone">Каменщики</label>
+                </div>
+              </div>
+            </div>
+            <div class="second_col">
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="kr" name="happy" value="yes" onclick="Check(this)">
+                  <label for="kr">Кровельщики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="mb" name="happy" value="yes" onclick="Check(this)">
+                  <label for="mb">Мебельщики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="mtl" name="happy" value="yes" onclick="Check(this)">
+                  <label for="mtl">Металлисты</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="ml" name="happy" value="yes" onclick="Check(this)">
+                  <label for="ml">Монолитчики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="st" name="happy" value="yes" onclick="Check(this)">
+                  <label for="st">Монтажники внешних сетей</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="window" name="happy" value="yes" onclick="Check(this)">
+                  <label for="window">Монтажники окон и светопроз</label>
+                </div>
+              </div>
+            </div>
+            <div class="third_col">
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="happy2" name="happy" value="yes" onclick="Check(this)">
+                  <label for="happy2">Общестроители-универсалы</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="happy3" name="happy" value="yes" onclick="Check(this)">
+                  <label for="happy3">Озеленители</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="otdel" name="happy" value="yes" onclick="Check(this)">
+                  <label for="otdel">Отделочники</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="carpent" name="happy" value="yes" onclick="Check(this)">
+                  <label for="carpent">Плотники, Столяры</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="worker" name="happy" value="yes" onclick="Check(this)">
+                  <label for="worker">Разнорабочие, Подсобники</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="plumber" name="happy" value="yes" onclick="Check(this)">
+                  <label for="plumber">Сантехники, Слесари</label>
+                </div>
+              </div>
+            </div>
+            <div class="fourth_col">
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="happy24" name="happy" value="yes" onclick="Check(this)">
+                  <label for="happy24">Сварщики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="happy25" name="happy" value="yes" onclick="Check(this)">
+                  <label for="happy25">Уборщики/Клининг</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="facade" name="happy" value="yes" onclick="Check(this)">
+                  <label for="facade">Фасадчики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="electrician" name="happy" value="yes" onclick="Check(this)">
+                  <label for="electrician">Электрики</label>
+                </div>
+              </div>
+              <div class="col_element">
+                <div class="check">
+                  <input type="checkbox" class="custom-checkbox" id="other" name="happy" value="yes" onclick="Check(this)">
+                  <label for="other">Другие</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+
+          <div class="subtypes">
+            <div class="first_block">
+              <p class="subtype_title">Металлисты</p>
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="option" data-value='1'>
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="automobiles"
+                      name="category"
+                    />
+                    <label for="automobiles">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="film" name="category" />
+                    <label for="film">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="science" name="category" />
+                    <label for="science">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="art" name="category" />
+                    <label for="art">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="music" name="category" />
+                    <label for="music">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="travel" name="category" />
+                    <label for="travel">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="sports" name="category" />
+                    <label for="sports">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="news" name="category" />
+                    <label for="news">Комплексная бригада</label>
+                  </div>
+
+                  <div class="option" data-value='1'>
+                    <input type="radio" class="radio" id="tutorials" name="category" />
+                    <label for="tutorials">Комплексная бригада</label>
+                  </div>
+                </div>
+
+                <div class="selected" data-value='1'>
+                  Выберите нужные подтипы
+                </div>
+              </div>
+              <div class="first_col">
+                <div class="type">
+                  <p>Комплексная бригада</p>
+                  <img src="./img/create_application/delete.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="second_block">
+              <p class="subtype_title">Отделочники</p>
+              <div class="select-box">
+                <div class="options-container options-container2">
+                  <div class="option" data-value='2'>
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="automobiles"
+                      name="category"
+                    />
+                    <label for="automobiles">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="film" name="category" />
+                    <label for="film">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="science" name="category" />
+                    <label for="science">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="art" name="category" />
+                    <label for="art">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="music" name="category" />
+                    <label for="music">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="travel" name="category" />
+                    <label for="travel">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="sports" name="category" />
+                    <label for="sports">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="news" name="category" />
+                    <label for="news">Паркетчик</label>
+                  </div>
+
+                  <div class="option" data-value='2'>
+                    <input type="radio" class="radio" id="tutorials" name="category" />
+                    <label for="tutorials">Паркетчик</label>
+                  </div>
+                </div>
+
+                <div class="selected selected2">
+                  Выберите нужные подтипы
+                </div>
+              </div>
+              <div class="second_col">
+                <div class="type">
+                  <p>Паркетчик</p>
+                  <img src="./img/create_application/delete.svg" alt="">
+                </div>
+              </div>
+              <div class="second_col">
+                <div class="type">
+                  <p>Универсалы</p>
+                  <img src="./img/create_application/delete.svg" alt="">
+                </div>
+              </div>
+              <div class="second_col">
+                <div class="type">
+                  <p>Гипсокартонщики</p>
+                  <img src="./img/create_application/delete.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="next_page">
+            Перейти к следующему шагу
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/selector.js"></script>
+<script src="./js/checkbox.js"></script>
+</html>
