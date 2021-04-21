@@ -93,6 +93,13 @@
   font-size: 18px;
   line-height: 22px;
 }
+@mixin font9_2{
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
 @mixin font10{
   font-family: Gilroy;
   font-style: normal;
@@ -141,4 +148,11 @@
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
+}
+@mixin font17{
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
 }
