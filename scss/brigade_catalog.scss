@@ -1,0 +1,42 @@
+@import "header_footer";
+@import "fonts";
+@import "client_business_card_page";
+@import "executor_business_card_page";
+@import "application_catalog";
+
+.page_title{
+  .text{
+    max-width: 370px;
+  }
+}
+
+.rating{
+  img{
+    border: 0 !important;
+  }
+}
+
+.mini_inputs{
+  display: flex;
+  input{
+    width: 50%
+  }
+  .citizenship{
+    margin-right: 16px;
+  }
+}
+.checboxes{
+  max-height: 190px !important;
+}
+
+@media (max-width: 1087px) {
+  .mini_inputs{
+    display: block;
+    input{
+      width: 100%
+    }
+    .citizenship{
+      margin-right: 0;
+    }
+  }
+}
