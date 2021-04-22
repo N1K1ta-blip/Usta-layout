@@ -1,0 +1,83 @@
+@mixin input{
+  input{
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    padding: 16px 20px;
+    // transition: .3s ease;
+    &.active{
+      background: #FFFFFF;
+      border: 1px solid #EEF0F1;
+      box-sizing: border-box;
+      outline:none;
+      padding: 14px 20px;
+    }
+    &:focus, &:valid{
+      background: #FFFFFF;
+      border: 1px solid #EEF0F1;
+      box-sizing: border-box;
+      outline:none;
+      padding: 14px 20px;
+    }
+  }
+  label{
+    @include font3;
+    color: #BEC0C2;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    transition: .3s ease;
+  }
+  input:focus ~ label,input:valid ~ label
+  {
+    @include font8;
+    color: #CDD0D3;
+    background-color: white;
+    top: -7px;
+    left: 20px;
+  }
+}
+
+@mixin input2{
+  input{
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    padding: 16px 20px;
+    // transition: .3s ease;
+    &.active{
+      background: #FFFFFF;
+      border: 1px solid #EEF0F1;
+      box-sizing: border-box;
+      outline:none;
+      padding: 14px 20px;
+    }
+    &:focus, &:valid{
+      background: #FFFFFF;
+      border: 1px solid #EEF0F1;
+      box-sizing: border-box;
+      outline:none;
+      padding: 14px 20px;
+    }
+  }
+  label{
+    @include font3;
+    color: #BEC0C2;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    transition: .3s ease;
+  }
+  input:focus ~ label,input:valid ~ label
+  {
+    @include font8;
+    color: #CDD0D3;
+    background-color: white;
+    top: -7px;
+    left: 20px;
+  }
+}

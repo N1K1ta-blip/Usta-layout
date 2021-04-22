@@ -7147,25 +7147,56 @@ main {
   margin-top: 19px;
   display: flex;
 }
-.object_infopmation_block .inputs_block .input1, .object_infopmation_block .inputs_block .input2 {
+.object_infopmation_block .inputs_block .new_password_input {
+  position: relative;
   width: 50%;
+}
+.object_infopmation_block .inputs_block .new_password_input input {
   background: #F9F9F9;
   border-radius: 6px;
-  padding: 15px 20px;
   border: 0;
-  outline: none;
+  width: 100%;
+  padding: 16px 20px;
 }
-.object_infopmation_block .inputs_block .input1::placeholder, .object_infopmation_block .inputs_block .input2::placeholder {
-  color: #BEC0C2;
-}
-.object_infopmation_block .inputs_block .input1:focus, .object_infopmation_block .inputs_block .input2:focus {
-  padding: 13px 19px;
-  background: #F9F9F9;
+.object_infopmation_block .inputs_block .new_password_input input.active {
+  background: #FFFFFF;
   border: 1px solid #EEF0F1;
   box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
 }
-.object_infopmation_block .inputs_block .input1 {
-  margin-right: 15px;
+.object_infopmation_block .inputs_block .new_password_input input:focus, .object_infopmation_block .inputs_block .new_password_input input:valid {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.object_infopmation_block .inputs_block .new_password_input label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BEC0C2;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.3s ease;
+}
+.object_infopmation_block .inputs_block .new_password_input input:focus ~ label, .object_infopmation_block .inputs_block .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
+}
+.object_infopmation_block .inputs_block .adress {
+  margin-left: 30px;
 }
 
 .next_page {
@@ -7325,7 +7356,7 @@ main {
   font-size: 15px;
   line-height: 18px;
   color: #808896;
-  margin: 35px 15px 0 15px;
+  margin: 15px 15px 0 15px;
 }
 .required_number_people .new_password_block_inputs .new_password_input {
   position: relative;
@@ -7334,9 +7365,8 @@ main {
 .required_number_people .new_password_block_inputs .new_password_input input {
   background: #F9F9F9;
   border-radius: 6px;
-  width: 150px;
-  margin-top: 19px;
   border: 0;
+  width: 100%;
   padding: 16px 20px;
 }
 .required_number_people .new_password_block_inputs .new_password_input input.active {
@@ -7346,7 +7376,7 @@ main {
   outline: none;
   padding: 14px 20px;
 }
-.required_number_people .new_password_block_inputs .new_password_input input:focus {
+.required_number_people .new_password_block_inputs .new_password_input input:focus, .required_number_people .new_password_block_inputs .new_password_input input:valid {
   background: #FFFFFF;
   border: 1px solid #EEF0F1;
   box-sizing: border-box;
@@ -7361,9 +7391,20 @@ main {
   line-height: 18px;
   color: #BEC0C2;
   position: absolute;
-  top: 35px;
+  top: 15px;
   left: 20px;
   transition: 0.3s ease;
+}
+.required_number_people .new_password_block_inputs .new_password_input input:focus ~ label, .required_number_people .new_password_block_inputs .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
 }
 .required_number_people .new_password_block_inputs .new_password_input p {
   font-family: Gilroy;
@@ -7384,17 +7425,6 @@ main {
 }
 .required_number_people .new_password_block_inputs .new_password_input p.active {
   display: block;
-}
-.required_number_people .new_password_block_inputs .new_password_input .show {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #CDD0D3;
-  background-color: white;
-  top: 12px;
-  left: 20px;
 }
 .required_number_people .new_password_block_inputs .col_element {
   display: flex;
@@ -7441,7 +7471,7 @@ main {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-.handymen .title, .completion_date .title {
+.handymen .title, .completion_date .title, .advance_payment .title, .payment_for_work .title {
   color: #273142;
   font-family: Gilroy;
   font-style: normal;
@@ -7449,10 +7479,10 @@ main {
   font-size: 18px;
   line-height: 22px;
 }
-.handymen .radios, .completion_date .radios {
+.handymen .radios, .completion_date .radios, .advance_payment .radios, .payment_for_work .radios {
   display: flex;
 }
-.handymen .radios .radio_block, .completion_date .radios .radio_block {
+.handymen .radios .radio_block, .completion_date .radios .radio_block, .advance_payment .radios .radio_block, .payment_for_work .radios .radio_block {
   margin-right: 30px;
   /* для элемента label связанного с .custom-radio */
   /* создание в label псевдоэлемента  before со следующими стилями */
@@ -7463,12 +7493,12 @@ main {
   /* стили для радиокнопки, находящейся в состоянии checked */
   /* стили для радиокнопки, находящейся в состоянии disabled */
 }
-.handymen .radios .radio_block .custom-radio, .completion_date .radios .radio_block .custom-radio {
+.handymen .radios .radio_block .custom-radio, .completion_date .radios .radio_block .custom-radio, .advance_payment .radios .radio_block .custom-radio, .payment_for_work .radios .radio_block .custom-radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.handymen .radios .radio_block .custom-radio + label, .completion_date .radios .radio_block .custom-radio + label {
+.handymen .radios .radio_block .custom-radio + label, .completion_date .radios .radio_block .custom-radio + label, .advance_payment .radios .radio_block .custom-radio + label, .payment_for_work .radios .radio_block .custom-radio + label {
   display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
@@ -7477,7 +7507,7 @@ main {
   font-size: 15px;
   line-height: 18px;
 }
-.handymen .radios .radio_block .custom-radio + label::before, .completion_date .radios .radio_block .custom-radio + label::before {
+.handymen .radios .radio_block .custom-radio + label::before, .completion_date .radios .radio_block .custom-radio + label::before, .advance_payment .radios .radio_block .custom-radio + label::before, .payment_for_work .radios .radio_block .custom-radio + label::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -7493,23 +7523,284 @@ main {
   background-position: center center;
   background-size: 50% 50%;
 }
-.handymen .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .completion_date .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before {
+.handymen .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .completion_date .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .advance_payment .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .payment_for_work .radios .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before {
   border-color: #b3d7ff;
 }
-.handymen .radios .radio_block .custom-radio:not(:disabled):active + label::before, .completion_date .radios .radio_block .custom-radio:not(:disabled):active + label::before {
+.handymen .radios .radio_block .custom-radio:not(:disabled):active + label::before, .completion_date .radios .radio_block .custom-radio:not(:disabled):active + label::before, .advance_payment .radios .radio_block .custom-radio:not(:disabled):active + label::before, .payment_for_work .radios .radio_block .custom-radio:not(:disabled):active + label::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
-.handymen .radios .radio_block .custom-radio:focus:not(:checked) + label::before, .completion_date .radios .radio_block .custom-radio:focus:not(:checked) + label::before {
+.handymen .radios .radio_block .custom-radio:focus:not(:checked) + label::before, .completion_date .radios .radio_block .custom-radio:focus:not(:checked) + label::before, .advance_payment .radios .radio_block .custom-radio:focus:not(:checked) + label::before, .payment_for_work .radios .radio_block .custom-radio:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
-.handymen .radios .radio_block .custom-radio:checked + label::before, .completion_date .radios .radio_block .custom-radio:checked + label::before {
+.handymen .radios .radio_block .custom-radio:checked + label::before, .completion_date .radios .radio_block .custom-radio:checked + label::before, .advance_payment .radios .radio_block .custom-radio:checked + label::before, .payment_for_work .radios .radio_block .custom-radio:checked + label::before {
   border-color: white;
   background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
   box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
 }
-.handymen .radios .radio_block .custom-radio:disabled + label::before, .completion_date .radios .radio_block .custom-radio:disabled + label::before {
+.handymen .radios .radio_block .custom-radio:disabled + label::before, .completion_date .radios .radio_block .custom-radio:disabled + label::before, .advance_payment .radios .radio_block .custom-radio:disabled + label::before, .payment_for_work .radios .radio_block .custom-radio:disabled + label::before {
   background-color: #e9ecef;
+}
+
+.add_job_type {
+  width: 100%;
+  margin-top: 27px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.035);
+  border-radius: 6px;
+}
+.add_job_type .info {
+  display: flex;
+}
+.add_job_type .info .type_work, .add_job_type .info .quantity, .add_job_type .info .cash, .add_job_type .info .cash_selector {
+  width: 25%;
+}
+.add_job_type .info .type_work .new_password_input {
+  position: relative;
+  width: 100%;
+}
+.add_job_type .info .type_work .new_password_input input {
+  background: #F9F9F9;
+  border-radius: 6px;
+  border: 0;
+  width: 100%;
+  padding: 16px 20px;
+}
+.add_job_type .info .type_work .new_password_input input.active {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.add_job_type .info .type_work .new_password_input input:focus, .add_job_type .info .type_work .new_password_input input:valid {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.add_job_type .info .type_work .new_password_input label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BEC0C2;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.3s ease;
+}
+.add_job_type .info .type_work .new_password_input input:focus ~ label, .add_job_type .info .type_work .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
+}
+.add_job_type .info .type_work .new_password_input p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #273142;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  z-index: 9999;
+  transition: 0.3s ease;
+  display: none;
+}
+.add_job_type .info .type_work .new_password_input p:hover {
+  cursor: pointer;
+}
+.add_job_type .info .type_work .new_password_input p.active {
+  display: block;
+}
+.add_job_type .info .quantity, .add_job_type .info .cash {
+  margin-left: 20px;
+}
+.add_job_type .info .quantity .new_password_input, .add_job_type .info .cash .new_password_input {
+  position: relative;
+  width: 100%;
+}
+.add_job_type .info .quantity .new_password_input input, .add_job_type .info .cash .new_password_input input {
+  background: #F9F9F9;
+  border-radius: 6px;
+  border: 0;
+  width: 100%;
+  padding: 16px 20px;
+}
+.add_job_type .info .quantity .new_password_input input.active, .add_job_type .info .cash .new_password_input input.active {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.add_job_type .info .quantity .new_password_input input:focus, .add_job_type .info .quantity .new_password_input input:valid, .add_job_type .info .cash .new_password_input input:focus, .add_job_type .info .cash .new_password_input input:valid {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.add_job_type .info .quantity .new_password_input label, .add_job_type .info .cash .new_password_input label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BEC0C2;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.3s ease;
+}
+.add_job_type .info .quantity .new_password_input input:focus ~ label, .add_job_type .info .quantity .new_password_input input:valid ~ label, .add_job_type .info .cash .new_password_input input:focus ~ label, .add_job_type .info .cash .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
+}
+.add_job_type .info .quantity .new_password_input p, .add_job_type .info .cash .new_password_input p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #273142;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  z-index: 9999;
+  transition: 0.3s ease;
+  display: none;
+}
+.add_job_type .info .quantity .new_password_input p:hover, .add_job_type .info .cash .new_password_input p:hover {
+  cursor: pointer;
+}
+.add_job_type .info .quantity .new_password_input p.active, .add_job_type .info .cash .new_password_input p.active {
+  display: block;
+}
+.add_job_type .info .quantity {
+  display: flex;
+}
+.add_job_type .info .quantity .quantity_select {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.add_job_type .info .quantity .quantity_select .main_block {
+  display: flex;
+  border: 1px solid #F8F8F8;
+}
+.add_job_type .info .quantity .quantity_select .main_block p {
+  margin: 9px;
+}
+.add_job_type .info .quantity .quantity_select .main_block .selector_arrow {
+  margin-top: 0;
+  margin-right: 0;
+  height: 100%;
+  background: #F9F9F9;
+  border-radius: 6px;
+  padding: 7px;
+  width: 25px;
+  cursor: pointer;
+}
+.add_job_type .info .quantity .quantity_select .main_block .selector_arrow img {
+  width: 30px !important;
+}
+.add_job_type .info .quantity .quantity_select .additionally_block {
+  display: none;
+  text-align: center;
+  border: 1px solid #F8F8F8;
+}
+.add_job_type .info .quantity .quantity_select .additionally_block p {
+  cursor: pointer;
+  margin-bottom: 3px;
+  transition: 0.3s ease;
+}
+.add_job_type .info .quantity .quantity_select .additionally_block p:hover {
+  background: #F9F9F9;
+}
+.add_job_type .info .cash_selector {
+  display: flex;
+}
+.add_job_type .info .cash_selector .quantity_select {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.add_job_type .info .cash_selector .quantity_select .main_block {
+  display: flex;
+  border: 1px solid #F8F8F8;
+}
+.add_job_type .info .cash_selector .quantity_select .main_block p {
+  margin: 9px;
+}
+.add_job_type .info .cash_selector .quantity_select .main_block .selector_arrow {
+  margin-top: 0;
+  margin-right: 0;
+  height: 100%;
+  background: #F9F9F9;
+  border-radius: 6px;
+  padding: 7px;
+  width: 25px;
+  cursor: pointer;
+}
+.add_job_type .info .cash_selector .quantity_select .main_block .selector_arrow img {
+  width: 30px !important;
+}
+.add_job_type .info .cash_selector .quantity_select .additionally_block {
+  display: none;
+  text-align: center;
+  border: 1px solid #F8F8F8;
+}
+.add_job_type .info .cash_selector .quantity_select .additionally_block p {
+  cursor: pointer;
+  margin-bottom: 3px;
+  transition: 0.3s ease;
+}
+.add_job_type .info .cash_selector .quantity_select .additionally_block p:hover {
+  background: #F9F9F9;
+}
+.add_job_type .info .cash_selector p {
+  margin: 12px;
+}
+
+.add {
+  margin-top: 15px;
+  display: flex;
+}
+.add p {
+  color: #273142;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 20px;
 }
 
 .shift_work .title {
@@ -7693,12 +7984,60 @@ main {
   }
   .object_infopmation_block .inputs_block {
     display: block !important;
+    margin-top: 19px;
+    display: flex;
   }
-  .object_infopmation_block .inputs_block .input1, .object_infopmation_block .inputs_block .input2 {
-    width: 100% !important;
+  .object_infopmation_block .inputs_block .new_password_input {
+    position: relative;
+    width: 100%;
   }
-  .object_infopmation_block .inputs_block .input1 {
-    margin-bottom: 15px;
+  .object_infopmation_block .inputs_block .new_password_input input {
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .object_infopmation_block .inputs_block .new_password_input input.active {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .object_infopmation_block .inputs_block .new_password_input input:focus, .object_infopmation_block .inputs_block .new_password_input input:valid {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .object_infopmation_block .inputs_block .new_password_input label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BEC0C2;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.3s ease;
+  }
+  .object_infopmation_block .inputs_block .new_password_input input:focus ~ label, .object_infopmation_block .inputs_block .new_password_input input:valid ~ label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CDD0D3;
+    background-color: white;
+    top: -7px;
+    left: 20px;
+  }
+  .object_infopmation_block .inputs_block .adress {
+    margin-top: 15px;
+    margin-left: 0;
   }
 
   .required_number_people .new_password_block_inputs {
@@ -7706,7 +8045,7 @@ main {
     flex-direction: column;
   }
   .required_number_people .new_password_block_inputs p {
-    margin: 35px 9px 0 9px;
+    margin: 15px 9px 0 9px;
   }
   .required_number_people .new_password_block_inputs .new_password_input {
     position: relative;
@@ -7766,11 +8105,11 @@ main {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   }
 
-  .handymen .radios, .completion_date .radios {
+  .handymen .radios, .completion_date .radios, .advance_payment .radios, .payment_for_work .radios {
     display: flex;
     flex-direction: column;
   }
-  .handymen .radios .radio_block, .completion_date .radios .radio_block {
+  .handymen .radios .radio_block, .completion_date .radios .radio_block, .advance_payment .radios .radio_block, .payment_for_work .radios .radio_block {
     margin-bottom: 11px;
   }
 
@@ -7791,6 +8130,233 @@ main {
   }
   .shift_work .answer .yes {
     margin-right: 10px;
+  }
+
+  .add_job_type {
+    width: 100%;
+    margin-top: 27px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.035);
+    border-radius: 6px;
+  }
+  .add_job_type .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .add_job_type .info .type_work, .add_job_type .info .quantity, .add_job_type .info .cash, .add_job_type .info .cash_selector {
+    width: 100%;
+  }
+  .add_job_type .info .type_work .new_password_input {
+    position: relative;
+    width: 100%;
+  }
+  .add_job_type .info .type_work .new_password_input input {
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .add_job_type .info .type_work .new_password_input input.active {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .add_job_type .info .type_work .new_password_input input:focus, .add_job_type .info .type_work .new_password_input input:valid {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .add_job_type .info .type_work .new_password_input label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BEC0C2;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.3s ease;
+  }
+  .add_job_type .info .type_work .new_password_input input:focus ~ label, .add_job_type .info .type_work .new_password_input input:valid ~ label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CDD0D3;
+    background-color: white;
+    top: -7px;
+    left: 20px;
+  }
+  .add_job_type .info .quantity, .add_job_type .info .cash {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .add_job_type .info .quantity .new_password_input, .add_job_type .info .cash .new_password_input {
+    position: relative;
+    width: 100%;
+  }
+  .add_job_type .info .quantity .new_password_input input, .add_job_type .info .cash .new_password_input input {
+    background: #F9F9F9;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .add_job_type .info .quantity .new_password_input input.active, .add_job_type .info .cash .new_password_input input.active {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .add_job_type .info .quantity .new_password_input input:focus, .add_job_type .info .quantity .new_password_input input:valid, .add_job_type .info .cash .new_password_input input:focus, .add_job_type .info .cash .new_password_input input:valid {
+    background: #FFFFFF;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    outline: none;
+    padding: 14px 20px;
+  }
+  .add_job_type .info .quantity .new_password_input label, .add_job_type .info .cash .new_password_input label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #BEC0C2;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.3s ease;
+  }
+  .add_job_type .info .quantity .new_password_input input:focus ~ label, .add_job_type .info .quantity .new_password_input input:valid ~ label, .add_job_type .info .cash .new_password_input input:focus ~ label, .add_job_type .info .cash .new_password_input input:valid ~ label {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CDD0D3;
+    background-color: white;
+    top: -7px;
+    left: 20px;
+  }
+  .add_job_type .info .quantity .new_password_input p, .add_job_type .info .cash .new_password_input p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #273142;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 9999;
+    transition: 0.3s ease;
+    display: none;
+  }
+  .add_job_type .info .quantity .new_password_input p:hover, .add_job_type .info .cash .new_password_input p:hover {
+    cursor: pointer;
+  }
+  .add_job_type .info .quantity .new_password_input p.active, .add_job_type .info .cash .new_password_input p.active {
+    display: block;
+  }
+  .add_job_type .info .quantity {
+    display: flex;
+  }
+  .add_job_type .info .quantity .quantity_select {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-left: 5px;
+  }
+  .add_job_type .info .quantity .quantity_select .main_block {
+    display: flex;
+    border: 1px solid #F8F8F8;
+  }
+  .add_job_type .info .quantity .quantity_select .main_block p {
+    margin: 9px;
+  }
+  .add_job_type .info .quantity .quantity_select .main_block .selector_arrow {
+    margin-top: 0;
+    margin-right: 0;
+    height: 100%;
+    background: #F9F9F9;
+    border-radius: 6px;
+    padding: 7px;
+    width: 25px;
+    cursor: pointer;
+  }
+  .add_job_type .info .quantity .quantity_select .main_block .selector_arrow img {
+    width: 30px !important;
+  }
+  .add_job_type .info .quantity .quantity_select .additionally_block {
+    display: none;
+    text-align: center;
+    border: 1px solid #F8F8F8;
+  }
+  .add_job_type .info .quantity .quantity_select .additionally_block p {
+    cursor: pointer;
+    margin-bottom: 3px;
+    transition: 0.3s ease;
+  }
+  .add_job_type .info .quantity .quantity_select .additionally_block p:hover {
+    background: #F9F9F9;
+  }
+  .add_job_type .info .cash_selector {
+    display: flex;
+    justify-content: space-between;
+  }
+  .add_job_type .info .cash_selector .quantity_select {
+    margin-top: 10px;
+  }
+  .add_job_type .info .cash_selector .quantity_select .main_block {
+    display: flex;
+    border: 1px solid #F8F8F8;
+  }
+  .add_job_type .info .cash_selector .quantity_select .main_block p {
+    margin: 9px;
+  }
+  .add_job_type .info .cash_selector .quantity_select .main_block .selector_arrow {
+    margin-top: 0;
+    margin-right: 0;
+    height: 100%;
+    background: #F9F9F9;
+    border-radius: 6px;
+    padding: 7px;
+    width: 25px;
+    cursor: pointer;
+  }
+  .add_job_type .info .cash_selector .quantity_select .main_block .selector_arrow img {
+    width: 30px !important;
+  }
+  .add_job_type .info .cash_selector .quantity_select .additionally_block {
+    display: none;
+    text-align: center;
+    border: 1px solid #F8F8F8;
+  }
+  .add_job_type .info .cash_selector .quantity_select .additionally_block p {
+    cursor: pointer;
+    margin-bottom: 3px;
+    transition: 0.3s ease;
+  }
+  .add_job_type .info .cash_selector .quantity_select .additionally_block p:hover {
+    background: #F9F9F9;
+  }
+  .add_job_type .info .cash_selector p {
+    margin: 0px;
+  }
+  .add_job_type .info .cash_selector .on {
+    margin-top: 20px;
   }
 }
 @media (max-width: 1280px) {

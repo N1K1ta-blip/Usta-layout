@@ -108,7 +108,7 @@ function Hid_input(e){
   if (e.getAttribute('data-value') == 'create_3') {
     let label = document.querySelectorAll('label')
     let input = document.querySelectorAll('input')
-    let input_new_password_1 = document.getElementById('input_new_password_1')
+    // let input_new_password_1 = document.getElementById('input_new_password_1')
     let input_new_password_2 = document.getElementById('input_new_password_2')
     count ++;
 

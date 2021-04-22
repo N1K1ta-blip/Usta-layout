@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/create_new_application.css">
 </head>
-<body onclick="Hid_input(this)" data-value="create_3">
+<body>
   <label for=""></label>
   <input type="hidden" id="Page_class" value="executor">
   <header>
@@ -119,10 +119,12 @@
         </div>
         <div class="dashed_line active"></div>
         <div class="page_number_discription active">
-          <div class="page_number">03</div>
+          <div class="page_number">
+            <img src="./img/create_application/done_page.svg" alt="">
+          </div>
         </div>
-        <div class="dashed_line"></div>
-        <div class="page_number_discription">
+        <div class="dashed_line  active"></div>
+        <div class="page_number_discription  active">
           <div class="page_number">04</div>
         </div>
         <div class="dashed_line"></div>
@@ -140,11 +142,11 @@
           <p class="page_description_title">Условия работы</p>
           <p class="page_description_text">Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="page_description active ">
+        <div class="page_description active">
           <p class="page_description_title">Сроки</p>
           <p class="page_description_text">Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="page_description">
+        <div class="page_description active">
           <p class="page_description_title">Условия оплаты</p>
           <p class="page_description_text">Lorem ipsum dolor sit amet</p>
         </div>
@@ -156,44 +158,50 @@
 
       <div class="filter_block" >
         <div class="specialization"  id="type_page" data-value="create_application">
-          <div class="required_number_people">
+          <div class="advance_payment">
             <div class="title">
-              Необходимое количество человек
+              Авансирование
             </div>
-            <div class="new_password_block_inputs">
-              <div class="piople">
-                <div class="new_password_input">
-                  <input type="text" name="" value="" data-value='new_password_1' id="input_new_password_1" required>
-                  <label for="new_password_1" data-value='new_password_1'>От</label>
-                </div>
-                <p>человек</p>
-                <div class="new_password_input">
-                  <input type="text" name="" value="" data-value='new_password_2' id="input_new_password_2" required>
-                  <label for="new_password_2" data-value='new_password_2'>До</label>
-                </div>
-                <p>человек</p>
+            <div class="radios">
+              <div class="radio_block">
+                <input class="custom-radio" name="advance_payment" type="radio" id="advance_payment1" value="green" onclick="Check_page3(this)">
+                <label for="advance_payment1">Предоставляется через 7 дней после начала работы</label>
               </div>
-              <div class="col_element">
-                <div class="check">
-                  <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur"  onclick="Check(this)">
-                  <label for="bur">На усмотрение исполнителя</label>
-                </div>
+              <div class="radio_block">
+                <input class="custom-radio" name="advance_payment" type="radio" id="advance_payment2" value="green" onclick="Check_page3(this)">
+                <label for="advance_payment2">Обсуждаемо</label>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="payment_for_work">
+            <div class="title">
+              Оплата работ
+            </div>
+            <div class="radios">
+              <div class="radio_block">
+                <input class="custom-radio" name="payment_for_work" type="radio" id="payment_for_work1" value="green" onclick="Check_page3(this)">
+                <label for="payment_for_work1">1 раз в 22 дня</label>
+              </div>
+              <div class="radio_block">
+                <input class="custom-radio" name="payment_for_work" type="radio" id="payment_for_work2" value="green" onclick="Check_page3(this)">
+                <label for="payment_for_work2">Обсуждаемо</label>
               </div>
             </div>
           </div>
           <div class="line"></div>
           <div class="handymen">
             <div class="title">
-              Разнорабочие
+              Тип оплаты
             </div>
             <div class="radios">
               <div class="radio_block">
                 <input class="custom-radio" name="handymen" type="radio" id="one" value="green" onclick="Check_page3(this)">
-                <label for="one">Должны быть в составе бригады</label>
+                <label for="one">Физ. лицо</label>
               </div>
               <div class="radio_block">
                 <input class="custom-radio" name="handymen" type="radio" id="two" value="green" onclick="Check_page3(this)">
-                <label for="two">Предоставляются заказчиком</label>
+                <label for="two">Юр. лицо</label>
               </div>
               <div class="radio_block">
                 <input class="custom-radio" name="handymen" type="radio" id="three" value="green" onclick="Check_page3(this)">
@@ -204,36 +212,91 @@
           <div class="line"></div>
           <div class="completion_date">
             <div class="title">
-              Срок окончания работ
+              Стоимость и тип работ
             </div>
             <div class="radios">
               <div class="radio_block">
                 <input class="custom-radio" name="completion_date" type="radio" id="completion_date1" value="green" onclick="Check_page3(this)">
-                <label for="completion_date1">К определённой дате</label>
+                <label for="completion_date1">м2/м3/м.п./шт/другое</label>
               </div>
               <div class="radio_block">
                 <input class="custom-radio" name="completion_date" type="radio" id="completion_date2" value="green" onclick="Check_page3(this)">
-                <label for="completion_date2">Обсуждаемо</label>
+                <label for="completion_date2">Фиксированная заработная плата</label>
+              </div>
+              <div class="radio_block">
+                <input class="custom-radio" name="completion_date" type="radio" id="completion_date3" value="green" onclick="Check_page3(this)">
+                <label for="completion_date3">Обсуждаемо</label>
               </div>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="shift_work">
-            <div class="title">
-              Работа вахтовым методом
-            </div>
-            <div class="answer">
-              <div class="yes">
-                <p>Да</p>
+          <div class="add_job_type">
+            <div class="info">
+              <div class="type_work">
+                <div class="new_password_input" id="new_password_2" onclick="">
+                  <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+                  <label for="new_password_2" data-value='new_password_2'>Укажите тип работ</label>
+                </div>
               </div>
-              <div class="no">
-                <p>Нет</p>
+              <div class="quantity">
+                <div class="new_password_input" id="new_password_2" onclick="">
+                  <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+                  <label for="new_password_2" data-value='new_password_2'>Кол-во</label>
+                </div>
+                <div class="quantity_select">
+                  <div class="main_block">
+                    <p id="current_value">м2</p>
+                    <div class="selector_arrow" data-value="0" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                  </div>
+                  <div class="additionally_block">
+                    <p data-value="0" onclick="OtherValue(this)">m2</p>
+                    <p data-value="0" onclick="OtherValue(this)">м3</p>
+                    <p data-value="0" onclick="OtherValue(this)">м.п.</p>
+                    <p data-value="0" onclick="OtherValue(this)">шт</p>
+                    <p data-value="0" onclick="OtherValue(this)">другое</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cash">
+                <div class="new_password_input">
+                  <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+                  <label for="new_password_2" data-value='new_password_2'>Стоимость</label>
+                </div>
+              </div>
+              <div class="cash_selector">
+                <div class="quantity_select">
+                  <div class="main_block">
+                    <p id="current_value1">₽</p>
+                    <div class="selector_arrow" data-value="1" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                  </div>
+                  <div class="additionally_block">
+                    <p data-value="1" onclick="OtherValue(this)">₽</p>
+                    <p data-value="1" onclick="OtherValue(this)">$</p>
+                    <p data-value="1" onclick="OtherValue(this)">€</p>
+                  </div>
+                </div>
+                <p class="on">за</p>
+                <div class="quantity_select">
+                  <div class="main_block">
+                    <p id="current_value2">всю работу</p>
+                    <div class="selector_arrow" data-value="2" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                  </div>
+                  <div class="additionally_block">
+                    <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+                    <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+                    <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+                  </div>
+                </div>
               </div>
             </div>
+          <div class="add">
+            <img src="./img/client_profile/plus.svg" alt="">
+            <p>Добавить тип работ</p>
+          </div>
           </div>
           <div class="line"></div>
           <div class="next_page">
             Перейти к следующему шагу
+          </div>
           </div>
         </div>
         </div>
@@ -281,6 +344,6 @@
   </footer>
 </body>
 <script src="./js/header.js"></script>
-<script src="./js/inputs.js"></script>
+<script src="./js/selector.js"></script>
 <script src="./js/checkbox.js"></script>
 </html>

@@ -131,6 +131,7 @@ function Check5(e) {
 
 function Check_page3(e) {
   let labels = document.querySelectorAll('label')
+  let inputs = document.querySelectorAll('input')
   for (var i = 0; i < labels.length; i++) {
       labels[i].style.color = "#BEC0C2"
   }
@@ -139,6 +140,11 @@ function Check_page3(e) {
       if (labels[i].getAttribute('for') == e.getAttribute('id')) {
         labels[i].style.color = "#525A68"
       }
+    }
+  }
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].checked == true) {
+      labels[i].style.color = "#525A68"
     }
   }
 }

@@ -3,6 +3,8 @@
 @import "client_business_card_page";
 @import "executor_business_card_page";
 @import "application_catalog";
+@import "input";
+@import "select";
 
 .numbers{
   display: flex;
@@ -242,25 +244,14 @@
   .inputs_block{
     margin-top: 19px;
     display: flex;
-    .input1, .input2{
+    .new_password_input{
+      position: relative;
       width: 50%;
-      background: #F9F9F9;
-      border-radius: 6px;
-      padding: 15px 20px;
-      border: 0;
-      outline:none;
-      &::placeholder{
-        color: #BEC0C2;
-      }
-      &:focus{
-        padding: 13px 19px;
-        background: #F9F9F9;
-        border: 1px solid #EEF0F1;
-        box-sizing: border-box;
-      }
+      @include input;
+
     }
-    .input1{
-      margin-right: 15px;
+    .adress{
+      margin-left: 30px;
     }
   }
 }
@@ -409,43 +400,12 @@
     p{
       @include font3;
       color: #808896;
-      margin: 35px 15px 0 15px;
+      margin: 15px 15px 0 15px;
     }
     .new_password_input{
       position: relative;
       width: 150px;
-      input{
-        background: #F9F9F9;
-        border-radius: 6px;
-        width: 150px;
-        margin-top: 19px;
-        border: 0;
-        padding: 16px 20px;
-        // transition: .3s ease;
-        &.active{
-          background: #FFFFFF;
-          border: 1px solid #EEF0F1;
-          box-sizing: border-box;
-          outline:none;
-          padding: 14px 20px;
-        }
-        &:focus{
-          background: #FFFFFF;
-          border: 1px solid #EEF0F1;
-          box-sizing: border-box;
-          outline:none;
-          padding: 14px 20px;
-        }
-      }
-      label{
-        @include font3;
-        color: #BEC0C2;
-        position: absolute;
-        top: 35px;
-        left: 20px;
-
-        transition: .3s ease;
-      }
+      @include input;
       p{
         @include font3;
         color: #273142;
@@ -461,13 +421,6 @@
       }
       p.active{
         display: block;
-      }
-      .show{
-        @include font8;
-        color: #CDD0D3;
-        background-color: white;
-        top: 12px;
-        left: 20px;
       }
     }
     .col_element{
@@ -514,7 +467,7 @@
   }
 }
 
-.handymen, .completion_date{
+.handymen, .completion_date, .advance_payment, .payment_for_work{
   .title{
     color: #273142;
     @include font9;
@@ -584,6 +537,91 @@
   }
 }
 
+
+
+.add_job_type{
+  width: 100%;
+  margin-top: 27px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.035);
+  border-radius: 6px;
+  .info{
+    display: flex;
+    .type_work, .quantity, .cash, .cash_selector{
+      width: 25%;
+    }
+    .type_work{
+      .new_password_input{
+        position: relative;
+        width: 100%;
+        @include input;
+        p{
+          @include font3;
+          color: #273142;
+          position: absolute;
+          top: 35px;
+          right: 20px;
+          z-index: 9999;
+          transition: .3s ease;
+          display: none;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        p.active{
+          display: block;
+        }
+      }
+    }
+    .quantity, .cash{
+      margin-left: 20px;
+      .new_password_input{
+        position: relative;
+        width: 100%;
+        @include input;
+        p{
+          @include font3;
+          color: #273142;
+          position: absolute;
+          top: 35px;
+          right: 20px;
+          z-index: 9999;
+          transition: .3s ease;
+          display: none;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        p.active{
+          display: block;
+        }
+      }
+    }
+    .quantity{
+      display: flex;
+      @include select
+    }
+    .cash_selector{
+      display: flex;
+      @include select;
+      p{
+        margin: 12px;
+      }
+    }
+
+  }
+}
+
+.add{
+  margin-top: 15px;
+  display: flex;
+  p{
+    color: #273142;
+    @include font11;
+    margin-top: 20px;
+  }
+}
 .shift_work{
   .title{
     color: #273142;
@@ -614,6 +652,12 @@
   }
 }
 @media (max-width: 1087px){
+  .piople{
+    p{
+
+    }
+  }
+
   .checboxes_page2{
     flex-direction: column !important;
     .tools, .accommodation, .workwear, .transportation, .food{
@@ -759,11 +803,17 @@
     }
     .inputs_block{
       display: block !important;
-      .input1, .input2{
-        width: 100% !important;
+      margin-top: 19px;
+      display: flex;
+      .new_password_input{
+        position: relative;
+        width: 100%;
+        @include input;
+
       }
-      .input1{
-        margin-bottom: 15px;
+      .adress{
+        margin-top: 15px;
+        margin-left: 0;
       }
     }
   }
@@ -773,7 +823,7 @@
       display: flex;
       flex-direction: column;
       p{
-        margin: 35px 9px 0 9px;
+        margin: 15px 9px 0 9px;
       }
       .new_password_input{
         position: relative;
@@ -833,7 +883,7 @@
     }
   }
 
-  .handymen, .completion_date{
+  .handymen, .completion_date, .advance_payment, .payment_for_work{
     .radios{
       display: flex;
       flex-direction: column;
@@ -857,6 +907,71 @@
       .yes{
         margin-right: 10px;
       }
+    }
+  }
+
+  .add_job_type{
+    width: 100%;
+    margin-top: 27px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.035);
+    border-radius: 6px;
+    .info{
+      display: flex;
+      flex-direction: column;
+      .type_work, .quantity, .cash, .cash_selector{
+        width: 100%;
+      }
+      .type_work{
+        .new_password_input{
+          position: relative;
+          width: 100%;
+          @include input;
+
+        }
+      }
+      .quantity, .cash{
+        margin-top: 20px;
+        margin-left: 0;
+        .new_password_input{
+          position: relative;
+          width: 100%;
+          @include input;
+          p{
+            @include font3;
+            color: #273142;
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            z-index: 9999;
+            transition: .3s ease;
+            display: none;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          p.active{
+            display: block;
+          }
+        }
+      }
+      .quantity{
+        display: flex;
+        @include select
+      }
+      .cash_selector{
+        display: flex;
+        justify-content: space-between;
+        @include select2;
+        p{
+          margin: 0px;
+        }
+        .on{
+          margin-top: 20px;
+        }
+      }
+
     }
   }
 }
