@@ -5,6 +5,7 @@
 @import "application_catalog";
 @import "input";
 @import "select";
+@import "add_files";
 
 .numbers{
   display: flex;
@@ -264,6 +265,7 @@
   background: linear-gradient(84.48deg, #61ADE6 0%, #8FCBF6 100%);
   box-shadow: 0px 2px 15px rgba(97, 173, 229, 0.3);
   border-radius: 50px;
+  text-align: center;
   &:hover{
     background: linear-gradient(#61ADE6 100%, #8FCBF6 100%);
     color: white;
@@ -470,6 +472,20 @@
   .title{
     color: #273142;
     @include font9;
+    display: flex;
+      p{
+        margin-right: 3px;
+        display: inline-block;
+      }
+      .memo{
+        color: #AAACAE;
+        @include font5;
+      }
+  }
+  .new_password_input{
+    position: relative;
+    width: 100%;
+    @include input;
   }
   .radios{
     display: flex;
@@ -534,9 +550,34 @@
   }
 }
 
-
+.downloads{
+  display: flex;
+  .photos, .videos, .drawings{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    .title{
+      color: #273142;
+      @include font9;
+      display: flex;
+        p{
+          margin-right: 3px;
+          display: inline-block;
+        }
+        .memo{
+          color: #AAACAE;
+          @include font5;
+        }
+    }
+    @include add_files;
+  }
+  .videos{
+    margin: 0 30px;
+  }
+}
 
 .add_job_type{
+  display: none;
   width: 100%;
   margin-top: 27px;
   padding: 20px;
@@ -685,10 +726,23 @@
 }
 
 @media (max-width: 1087px){
-.next_day{
-  margin-top: 25px;
-  margin-left: -240px;
-}
+  .downloads{
+    display: block;
+    .photos, .videos, .drawings{
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .videos{
+      margin: 20px 0;
+    }
+  }
+
+  .next_day{
+    margin-top: 25px;
+    margin-left: -240px;
+  }
 
   .piople{
     p{
@@ -1010,6 +1064,12 @@
       }
 
     }
+  }
+  .type_work2{
+    width: 100% !important;
+  }
+  .label_span{
+    display: none;
   }
 }
 

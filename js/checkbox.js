@@ -132,6 +132,24 @@ function Check5(e) {
 function Check_page3(e) {
   let labels = document.querySelectorAll('label')
   let inputs = document.querySelectorAll('input')
+  let value = e.value
+  if (value == 'm2') {
+    document.getElementById('add_job_type').style.display = 'block'
+    document.getElementById('info1').style.display = 'flex'
+    document.getElementById('add1').style.display = 'flex'
+    document.getElementById('info2').style.display = 'none'
+    document.getElementById('add2').style.display = 'none'
+  }
+  if (value == 'fiks') {
+    document.getElementById('add_job_type').style.display = 'block'
+    document.getElementById('info1').style.display = 'none'
+    document.getElementById('add1').style.display = 'none'
+    document.getElementById('info2').style.display = 'flex'
+    document.getElementById('add2').style.display = 'flex'
+  }
+  if (value == 'obs') {
+    document.getElementById('add_job_type').style.display = 'none'
+  }
   for (var i = 0; i < labels.length; i++) {
       labels[i].style.color = "#BEC0C2"
   }

@@ -7211,6 +7211,7 @@ main {
   background: linear-gradient(84.48deg, #61ADE6 0%, #8FCBF6 100%);
   box-shadow: 0px 2px 15px rgba(97, 173, 229, 0.3);
   border-radius: 50px;
+  text-align: center;
 }
 .next_page:hover {
   background: linear-gradient(#61ADE6 100%, #8FCBF6 100%);
@@ -7477,6 +7478,67 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  display: flex;
+}
+.handymen .title p, .completion_date .title p, .advance_payment .title p, .payment_for_work .title p {
+  margin-right: 3px;
+  display: inline-block;
+}
+.handymen .title .memo, .completion_date .title .memo, .advance_payment .title .memo, .payment_for_work .title .memo {
+  color: #AAACAE;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+.handymen .new_password_input, .completion_date .new_password_input, .advance_payment .new_password_input, .payment_for_work .new_password_input {
+  position: relative;
+  width: 100%;
+}
+.handymen .new_password_input input, .completion_date .new_password_input input, .advance_payment .new_password_input input, .payment_for_work .new_password_input input {
+  background: #F9F9F9;
+  border-radius: 6px;
+  border: 0;
+  width: 100%;
+  padding: 16px 20px;
+}
+.handymen .new_password_input input.active, .completion_date .new_password_input input.active, .advance_payment .new_password_input input.active, .payment_for_work .new_password_input input.active {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.handymen .new_password_input input:focus, .handymen .new_password_input input:valid, .completion_date .new_password_input input:focus, .completion_date .new_password_input input:valid, .advance_payment .new_password_input input:focus, .advance_payment .new_password_input input:valid, .payment_for_work .new_password_input input:focus, .payment_for_work .new_password_input input:valid {
+  background: #FFFFFF;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 14px 20px;
+}
+.handymen .new_password_input label, .completion_date .new_password_input label, .advance_payment .new_password_input label, .payment_for_work .new_password_input label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #BEC0C2;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.3s ease;
+}
+.handymen .new_password_input input:focus ~ label, .handymen .new_password_input input:valid ~ label, .completion_date .new_password_input input:focus ~ label, .completion_date .new_password_input input:valid ~ label, .advance_payment .new_password_input input:focus ~ label, .advance_payment .new_password_input input:valid ~ label, .payment_for_work .new_password_input input:focus ~ label, .payment_for_work .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
 }
 .handymen .radios, .completion_date .radios, .advance_payment .radios, .payment_for_work .radios {
   display: flex;
@@ -7538,7 +7600,69 @@ main {
   background-color: #e9ecef;
 }
 
+.downloads {
+  display: flex;
+}
+.downloads .photos, .downloads .videos, .downloads .drawings {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.downloads .photos .title, .downloads .videos .title, .downloads .drawings .title {
+  color: #273142;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+}
+.downloads .photos .title p, .downloads .videos .title p, .downloads .drawings .title p {
+  margin-right: 3px;
+  display: inline-block;
+}
+.downloads .photos .title .memo, .downloads .videos .title .memo, .downloads .drawings .title .memo {
+  color: #AAACAE;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+.downloads .photos .example-1 input[type=file], .downloads .videos .example-1 input[type=file], .downloads .drawings .example-1 input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.downloads .photos .example-1 .label, .downloads .videos .example-1 .label, .downloads .drawings .example-1 .label {
+  border: 1px dashed #EEF0F1;
+  border-radius: 6px;
+  display: block;
+  padding: 1.2em;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+}
+.downloads .photos .example-1 .label i, .downloads .videos .example-1 .label i, .downloads .drawings .example-1 .label i {
+  display: block;
+  font-size: 42px;
+  padding-bottom: 16px;
+}
+.downloads .photos .example-1 .label i, .downloads .photos .example-1 .label .title, .downloads .videos .example-1 .label i, .downloads .videos .example-1 .label .title, .downloads .drawings .example-1 .label i, .downloads .drawings .example-1 .label .title {
+  color: grey;
+  transition: 200ms color;
+}
+.downloads .photos .example-1 .label:hover i, .downloads .photos .example-1 .label:hover .title, .downloads .videos .example-1 .label:hover i, .downloads .videos .example-1 .label:hover .title, .downloads .drawings .example-1 .label:hover i, .downloads .drawings .example-1 .label:hover .title {
+  color: #000;
+}
+.downloads .videos {
+  margin: 0 30px;
+}
+
 .add_job_type {
+  display: none;
   width: 100%;
   margin-top: 27px;
   padding: 20px;
@@ -7871,6 +7995,18 @@ main {
 }
 
 @media (max-width: 1087px) {
+  .downloads {
+    display: block;
+  }
+  .downloads .photos, .downloads .videos, .downloads .drawings {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .downloads .videos {
+    margin: 20px 0;
+  }
+
   .next_day {
     margin-top: 25px;
     margin-left: -240px;
@@ -8392,6 +8528,14 @@ main {
   }
   .add_job_type .info .cash_selector .on {
     margin-top: 20px;
+  }
+
+  .type_work2 {
+    width: 100% !important;
+  }
+
+  .label_span {
+    display: none;
   }
 }
 @media (max-width: 1280px) {

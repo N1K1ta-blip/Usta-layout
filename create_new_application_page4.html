@@ -242,21 +242,21 @@
             </div>
             <div class="radios">
               <div class="radio_block">
-                <input class="custom-radio" name="completion_date" type="radio" id="completion_date1" value="green" onclick="Check_page3(this)">
+                <input class="custom-radio" name="completion_date" type="radio" id="completion_date1" value="m2" onclick="Check_page3(this)">
                 <label for="completion_date1">м2/м3/м.п./шт/другое</label>
               </div>
               <div class="radio_block">
-                <input class="custom-radio" name="completion_date" type="radio" id="completion_date2" value="green" onclick="Check_page3(this)">
+                <input class="custom-radio" name="completion_date" type="radio" id="completion_date2" value="fiks" onclick="Check_page3(this)">
                 <label for="completion_date2">Фиксированная заработная плата</label>
               </div>
               <div class="radio_block">
-                <input class="custom-radio" name="completion_date" type="radio" id="completion_date3" value="green" onclick="Check_page3(this)">
+                <input class="custom-radio" name="completion_date" type="radio" id="completion_date3" value="obs" onclick="Check_page3(this)">
                 <label for="completion_date3">Обсуждаемо</label>
               </div>
             </div>
           </div>
-          <div class="add_job_type">
-            <div class="info">
+          <div class="add_job_type" id="add_job_type">
+            <div class="info" id="info1">
               <div class="type_work">
                 <div class="new_password_input" id="new_password_2" onclick="">
                   <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
@@ -314,10 +314,43 @@
                 </div>
               </div>
             </div>
-          <div class="add">
-            <img src="./img/client_profile/plus.svg" alt="">
-            <p>Добавить тип работ</p>
-          </div>
+            <div class="add" id="add1">
+              <img src="./img/client_profile/plus.svg" alt="">
+              <p>Добавить тип работ</p>
+            </div>
+            <div class="info" id="info2" style="display:none">
+              <div class="type_work type_work2" style="width:50%">
+                <div class="new_password_input" id="new_password_2" onclick="">
+                  <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+                  <label for="new_password_2" data-value='new_password_2'>Должность <span class="label_span">(бригадир, специалист, разнорабочий)</span></label>
+                </div>
+              </div>
+              <div class="cash">
+                <div class="new_password_input">
+                  <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+                  <label for="new_password_2" data-value='new_password_2'>Оклад</label>
+                </div>
+              </div>
+              <div class="cash_selector" style="justify-content: left">
+                <div class="quantity_select">
+                  <div class="main_block">
+                    <p id="current_value1">₽</p>
+                    <div class="selector_arrow" data-value="1" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                  </div>
+                  <div class="additionally_block">
+                    <p data-value="1" onclick="OtherValue(this)">₽</p>
+                    <p data-value="1" onclick="OtherValue(this)">$</p>
+                    <p data-value="1" onclick="OtherValue(this)">€</p>
+                  </div>
+                </div>
+                <p class="on">в месяц</p>
+              </div>
+            </div>
+
+            <div class="add" id="add2">
+              <img src="./img/client_profile/plus.svg" alt="">
+              <p>Добавить должность</p>
+            </div>
           </div>
           <div class="line"></div>
           <div class="next_page">

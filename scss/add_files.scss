@@ -1,0 +1,7 @@
+@mixin add_files{
+  .example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+  .example-1 .label{border: 1px dashed #EEF0F1;border-radius:6px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
+  .example-1 .label i{display:block;font-size:42px;padding-bottom:16px}
+  .example-1 .label i,.example-1 .label .title{color:grey;transition:200ms color}
+  .example-1 .label:hover i,.example-1 .label:hover .title{color:#000}
+}
