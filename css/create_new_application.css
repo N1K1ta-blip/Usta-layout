@@ -7078,7 +7078,6 @@ main {
 }
 .checboxes_page2 .tools .radio_block .custom-radio + label, .checboxes_page2 .accommodation .radio_block .custom-radio + label, .checboxes_page2 .workwear .radio_block .custom-radio + label, .checboxes_page2 .transportation .radio_block .custom-radio + label, .checboxes_page2 .food .radio_block .custom-radio + label {
   display: inline-flex;
-  align-items: center;
   -webkit-user-select: none;
           user-select: none;
   color: #BEC0C2;
@@ -7500,9 +7499,6 @@ main {
 }
 .handymen .radios .radio_block .custom-radio + label, .completion_date .radios .radio_block .custom-radio + label, .advance_payment .radios .radio_block .custom-radio + label, .payment_for_work .radios .radio_block .custom-radio + label {
   display: inline-flex;
-  align-items: center;
-  -webkit-user-select: none;
-          user-select: none;
   color: #BEC0C2;
   font-size: 15px;
   line-height: 18px;
@@ -7839,7 +7835,47 @@ main {
   margin-right: 10px;
 }
 
+.number_selector {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+.number_selector .numbers {
+  background: #F9F9F9;
+  border-radius: 3px;
+  padding: 9px;
+  margin-top: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.number_selector .numbers p {
+  margin-right: 18px;
+}
+.number_selector .numbers .arrow {
+  cursor: pointer;
+}
+.number_selector .options {
+  display: none;
+  border: 1px solid #F9F9F9;
+  border-radius: 5px;
+  width: 53px;
+  margin-left: 4px;
+  text-align: center;
+}
+.number_selector .options p {
+  margin: 2px 0;
+  cursor: pointer;
+}
+.number_selector .options p:hover {
+  background: #F9F9F9;
+}
+
 @media (max-width: 1087px) {
+  .next_day {
+    margin-top: 25px;
+    margin-left: -240px;
+  }
+
   .checboxes_page2 {
     flex-direction: column !important;
   }
@@ -7865,7 +7901,6 @@ main {
   }
   .checboxes_page2 .tools .radio_block .custom-radio + label, .checboxes_page2 .accommodation .radio_block .custom-radio + label, .checboxes_page2 .workwear .radio_block .custom-radio + label, .checboxes_page2 .transportation .radio_block .custom-radio + label, .checboxes_page2 .food .radio_block .custom-radio + label {
     display: inline-flex;
-    align-items: center;
     -webkit-user-select: none;
             user-select: none;
     color: #BEC0C2;

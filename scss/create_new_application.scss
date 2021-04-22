@@ -172,7 +172,6 @@
       /* для элемента label связанного с .custom-radio */
       .custom-radio+label {
         display: inline-flex;
-        align-items: center;
         user-select: none;
         color: #BEC0C2;
         font-size: 15px;
@@ -484,8 +483,6 @@
       /* для элемента label связанного с .custom-radio */
       .custom-radio+label {
         display: inline-flex;
-        align-items: center;
-        user-select: none;
         color: #BEC0C2;
         font-size: 15px;
         line-height: 18px;
@@ -651,7 +648,48 @@
     }
   }
 }
+
+.number_selector{
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  .numbers{
+    background: #F9F9F9;
+    border-radius: 3px;
+    padding: 9px;
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    p{
+      margin-right: 18px;
+    }
+    .arrow{
+      cursor: pointer;
+    }
+  }
+  .options{
+    display: none;
+    border: 1px solid #F9F9F9;
+    border-radius: 5px;
+    width: 53px;
+    margin-left: 4px;
+    text-align: center;
+    p{
+      margin: 2px 0;
+      cursor: pointer;
+      &:hover{
+        background: #F9F9F9;
+      }
+    }
+  }
+}
+
 @media (max-width: 1087px){
+.next_day{
+  margin-top: 25px;
+  margin-left: -240px;
+}
+
   .piople{
     p{
 
@@ -675,7 +713,6 @@
         /* для элемента label связанного с .custom-radio */
         .custom-radio+label {
           display: inline-flex;
-          align-items: center;
           user-select: none;
           color: #BEC0C2;
           font-size: 15px;

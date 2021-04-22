@@ -165,7 +165,20 @@
             <div class="radios">
               <div class="radio_block">
                 <input class="custom-radio" name="advance_payment" type="radio" id="advance_payment1" value="green" onclick="Check_page3(this)">
-                <label for="advance_payment1">Предоставляется через 7 дней после начала работы</label>
+                <label for="advance_payment1"><p style="width:175px">Предоставляется через</p>
+                  <div class="number_selector">
+                    <div class=numbers>
+                      <p id="current_value4">7</p>
+                      <div class="arrow" data-value="0" onclick="Search_number(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                    </div>
+                    <div class="options" id="first_options">
+                      <p data-value="4" onclick="OtherValue(this)">8</p>
+                      <p data-value="4" onclick="OtherValue(this)">9</p>
+                      <p data-value="4" onclick="OtherValue(this)">10</p>
+                      <p data-value="4" onclick="OtherValue(this)">11</p>
+                    </div>
+                  </div>
+                <p class="next_day"style="width:200px">дней после начала работы</p></label>
               </div>
               <div class="radio_block">
                 <input class="custom-radio" name="advance_payment" type="radio" id="advance_payment2" value="green" onclick="Check_page3(this)">
@@ -181,7 +194,20 @@
             <div class="radios">
               <div class="radio_block">
                 <input class="custom-radio" name="payment_for_work" type="radio" id="payment_for_work1" value="green" onclick="Check_page3(this)">
-                <label for="payment_for_work1">1 раз в 22 дня</label>
+                <label for="payment_for_work1">1 раз в
+                  <div class="number_selector">
+                    <div class=numbers>
+                      <p id="current_value5">22</p>
+                      <div class="arrow" data-value="1" onclick="Search_number(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+                    </div>
+                    <div class="options" id="second_options">
+                      <p data-value="5" onclick="OtherValue(this)">22</p>
+                      <p data-value="5" onclick="OtherValue(this)">23</p>
+                      <p data-value="5" onclick="OtherValue(this)">24</p>
+                      <p data-value="5" onclick="OtherValue(this)">25</p>
+                    </div>
+                  </div>
+                   дня</label>
               </div>
               <div class="radio_block">
                 <input class="custom-radio" name="payment_for_work" type="radio" id="payment_for_work2" value="green" onclick="Check_page3(this)">
@@ -300,7 +326,6 @@
           </div>
         </div>
         </div>
-      </div>
 
   </main>
   <footer>
