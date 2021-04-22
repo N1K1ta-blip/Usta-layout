@@ -6894,6 +6894,9 @@ main {
   font-size: 25px;
   line-height: 30px;
 }
+.numbers .page_number_discription .page_number img {
+  margin-left: 3px;
+}
 .numbers .page_number_discription.active .page_number {
   color: #61ADE5;
   border: 1px dashed #61ADE5;
@@ -6903,6 +6906,9 @@ main {
   width: 148px;
   margin: 30px 15px;
   border: 1px dashed #DFE1E3;
+}
+.numbers .dashed_line.active {
+  border: 1px dashed #61ADE5;
 }
 
 .numbers_descriptions {
@@ -6944,6 +6950,7 @@ main {
 }
 .filter_block .specialization .specialization_search p {
   margin-right: 3px;
+  display: inline-block;
 }
 .filter_block .specialization .specialization_search span {
   color: #AAACAE;
@@ -7032,6 +7039,133 @@ main {
 .subtypes .second_block .second_col .type img {
   cursor: pointer;
   margin-left: 15px;
+}
+
+.checboxes_page2 {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 10px;
+  margin-top: 0;
+}
+.checboxes_page2 .tools, .checboxes_page2 .accommodation, .checboxes_page2 .workwear, .checboxes_page2 .transportation, .checboxes_page2 .food {
+  width: 33%;
+}
+.checboxes_page2 .tools .title, .checboxes_page2 .accommodation .title, .checboxes_page2 .workwear .title, .checboxes_page2 .transportation .title, .checboxes_page2 .food .title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #273142;
+  margin-bottom: 17px;
+}
+.checboxes_page2 .tools .radio_block, .checboxes_page2 .accommodation .radio_block, .checboxes_page2 .workwear .radio_block, .checboxes_page2 .transportation .radio_block, .checboxes_page2 .food .radio_block {
+  margin-bottom: 3px;
+  /* для элемента input c type="radio" */
+  /* для элемента label связанного с .custom-radio */
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  /* стили при наведении курсора на радио */
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  /* стили для радиокнопки, находящейся в фокусе */
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+}
+.checboxes_page2 .tools .radio_block .custom-radio, .checboxes_page2 .accommodation .radio_block .custom-radio, .checboxes_page2 .workwear .radio_block .custom-radio, .checboxes_page2 .transportation .radio_block .custom-radio, .checboxes_page2 .food .radio_block .custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checboxes_page2 .tools .radio_block .custom-radio + label, .checboxes_page2 .accommodation .radio_block .custom-radio + label, .checboxes_page2 .workwear .radio_block .custom-radio + label, .checboxes_page2 .transportation .radio_block .custom-radio + label, .checboxes_page2 .food .radio_block .custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+          user-select: none;
+  color: #BEC0C2;
+  font-size: 15px;
+  line-height: 18px;
+}
+.checboxes_page2 .tools .radio_block .custom-radio + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio + label::before, .checboxes_page2 .workwear .radio_block .custom-radio + label::before, .checboxes_page2 .transportation .radio_block .custom-radio + label::before, .checboxes_page2 .food .radio_block .custom-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #F9F9F9;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.checboxes_page2 .tools .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .accommodation .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .workwear .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .transportation .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .food .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+.checboxes_page2 .tools .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .food .radio_block .custom-radio:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.checboxes_page2 .tools .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .food .radio_block .custom-radio:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+.checboxes_page2 .tools .radio_block .custom-radio:checked + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:checked + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:checked + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:checked + label::before, .checboxes_page2 .food .radio_block .custom-radio:checked + label::before {
+  border-color: white;
+  background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
+}
+.checboxes_page2 .tools .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .food .radio_block .custom-radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+.checboxes_page2 .transportation, .checboxes_page2 .food {
+  margin-top: 30px;
+}
+
+.object_infopmation_block .title {
+  display: flex;
+}
+.object_infopmation_block .title .name {
+  margin-right: 3px;
+  display: inline-block;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.object_infopmation_block .title .desk {
+  color: #AAACAE;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+.object_infopmation_block .inputs_block {
+  margin-top: 19px;
+  display: flex;
+}
+.object_infopmation_block .inputs_block .input1, .object_infopmation_block .inputs_block .input2 {
+  width: 50%;
+  background: #F9F9F9;
+  border-radius: 6px;
+  padding: 15px 20px;
+  border: 0;
+  outline: none;
+}
+.object_infopmation_block .inputs_block .input1::placeholder, .object_infopmation_block .inputs_block .input2::placeholder {
+  color: #BEC0C2;
+}
+.object_infopmation_block .inputs_block .input1:focus, .object_infopmation_block .inputs_block .input2:focus {
+  padding: 13px 19px;
+  background: #F9F9F9;
+  border: 1px solid #EEF0F1;
+  box-sizing: border-box;
+}
+.object_infopmation_block .inputs_block .input1 {
+  margin-right: 15px;
 }
 
 .next_page {
@@ -7124,6 +7258,76 @@ main {
 }
 
 @media (max-width: 1087px) {
+  .checboxes_page2 {
+    flex-direction: column !important;
+  }
+  .checboxes_page2 .tools, .checboxes_page2 .accommodation, .checboxes_page2 .workwear, .checboxes_page2 .transportation, .checboxes_page2 .food {
+    width: 100%;
+  }
+  .checboxes_page2 .tools .radio_block, .checboxes_page2 .accommodation .radio_block, .checboxes_page2 .workwear .radio_block, .checboxes_page2 .transportation .radio_block, .checboxes_page2 .food .radio_block {
+    margin-bottom: 3px;
+    /* для элемента input c type="radio" */
+    /* для элемента label связанного с .custom-radio */
+    /* создание в label псевдоэлемента  before со следующими стилями */
+    /* стили при наведении курсора на радио */
+    /* стили для активной радиокнопки (при нажатии на неё) */
+    /* стили для радиокнопки, находящейся в фокусе */
+    /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+    /* стили для радиокнопки, находящейся в состоянии checked */
+    /* стили для радиокнопки, находящейся в состоянии disabled */
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio, .checboxes_page2 .accommodation .radio_block .custom-radio, .checboxes_page2 .workwear .radio_block .custom-radio, .checboxes_page2 .transportation .radio_block .custom-radio, .checboxes_page2 .food .radio_block .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio + label, .checboxes_page2 .accommodation .radio_block .custom-radio + label, .checboxes_page2 .workwear .radio_block .custom-radio + label, .checboxes_page2 .transportation .radio_block .custom-radio + label, .checboxes_page2 .food .radio_block .custom-radio + label {
+    display: inline-flex;
+    align-items: center;
+    -webkit-user-select: none;
+            user-select: none;
+    color: #BEC0C2;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio + label::before, .checboxes_page2 .workwear .radio_block .custom-radio + label::before, .checboxes_page2 .transportation .radio_block .custom-radio + label::before, .checboxes_page2 .food .radio_block .custom-radio + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #F9F9F9;
+    border: 1px solid #EEF0F1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .accommodation .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .workwear .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .transportation .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before, .checboxes_page2 .food .radio_block .custom-radio:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #b3d7ff;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:not(:disabled):active + label::before, .checboxes_page2 .food .radio_block .custom-radio:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:focus:not(:checked) + label::before, .checboxes_page2 .food .radio_block .custom-radio:focus:not(:checked) + label::before {
+    border-color: #80bdff;
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio:checked + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:checked + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:checked + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:checked + label::before, .checboxes_page2 .food .radio_block .custom-radio:checked + label::before {
+    border-color: white;
+    background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
+  }
+  .checboxes_page2 .tools .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .food .radio_block .custom-radio:disabled + label::before {
+    background-color: #e9ecef;
+  }
+  .checboxes_page2 .transportation, .checboxes_page2 .food {
+    margin-top: 30px;
+  }
+
   .specialization_search {
     flex-direction: row !important;
   }
@@ -7149,6 +7353,9 @@ main {
     font-size: 20px;
     line-height: 24px;
   }
+  .numbers .page_number_discription .page_number img {
+    margin-left: 1px;
+  }
   .numbers .page_number_discription.active .page_number {
     color: #61ADE5;
     border: 1px dashed #61ADE5;
@@ -7170,6 +7377,37 @@ main {
   .subtypes .second_block {
     margin-left: 0;
     margin-top: 25px;
+  }
+
+  .object_infopmation_block .title {
+    display: flex;
+  }
+  .object_infopmation_block .title .name {
+    margin-right: 3px;
+    display: inline-block;
+    width: 140px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .object_infopmation_block .title .desk {
+    color: #AAACAE;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .object_infopmation_block .inputs_block {
+    display: block !important;
+  }
+  .object_infopmation_block .inputs_block .input1, .object_infopmation_block .inputs_block .input2 {
+    width: 100% !important;
+  }
+  .object_infopmation_block .inputs_block .input1 {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 1280px) {

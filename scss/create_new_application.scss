@@ -20,6 +20,9 @@
       font-weight: 300;
       font-size: 25px;
       line-height: 30px;
+      img{
+        margin-left: 3px;
+      }
     }
   }
   .page_number_discription.active{
@@ -33,6 +36,9 @@
     width: 148px;
     margin: 30px 15px;
     border: 1px dashed #DFE1E3;
+  }
+  .dashed_line.active{
+    border: 1px dashed #61ADE5;
   }
 }
 
@@ -68,6 +74,7 @@
     .specialization_search{
       p{
         margin-right: 3px;
+        display: inline-block;
       }
       span{
         color: #AAACAE;
@@ -76,7 +83,6 @@
     }
   }
 }
-
 .subtypes{
   display: flex;
   .first_block{
@@ -141,6 +147,123 @@
   }
 }
 
+.checboxes_page2{
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 10px;
+  margin-top: 0;
+  .tools, .accommodation, .workwear, .transportation, .food{
+    width: 33%;
+    .title{
+      @include font9;
+      color: #273142;
+      margin-bottom: 17px;
+    }
+    .radio_block{
+      margin-bottom: 3px;
+      /* для элемента input c type="radio" */
+      .custom-radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+      /* для элемента label связанного с .custom-radio */
+      .custom-radio+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        color: #BEC0C2;
+        font-size: 15px;
+        line-height: 18px;
+      }
+      /* создание в label псевдоэлемента  before со следующими стилями */
+      .custom-radio+label::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        background: #F9F9F9;
+        border: 1px solid #EEF0F1;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+      /* стили при наведении курсора на радио */
+      .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+        border-color: #b3d7ff;
+      }
+      /* стили для активной радиокнопки (при нажатии на неё) */
+      .custom-radio:not(:disabled):active+label::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+      }
+      /* стили для радиокнопки, находящейся в фокусе */
+      .custom-radio:focus+label::before {
+      }
+      /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+      .custom-radio:focus:not(:checked)+label::before {
+        border-color: #80bdff;
+      }
+      /* стили для радиокнопки, находящейся в состоянии checked */
+      .custom-radio:checked+label::before {
+        border-color: white;
+        background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
+        box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
+      }
+      /* стили для радиокнопки, находящейся в состоянии disabled */
+      .custom-radio:disabled+label::before {
+        background-color: #e9ecef;
+      }
+    }
+  }
+  .transportation, .food{
+    margin-top: 30px;
+  }
+}
+
+.object_infopmation_block{
+  .title{
+    display: flex;
+    .name{
+      margin-right: 3px;
+      display: inline-block;
+      @include font9;
+    }
+    .desk{
+      color: #AAACAE;
+      @include font5;
+    }
+  }
+  .inputs_block{
+    margin-top: 19px;
+    display: flex;
+    .input1, .input2{
+      width: 50%;
+      background: #F9F9F9;
+      border-radius: 6px;
+      padding: 15px 20px;
+      border: 0;
+      outline:none;
+      &::placeholder{
+        color: #BEC0C2;
+      }
+      &:focus{
+        padding: 13px 19px;
+        background: #F9F9F9;
+        border: 1px solid #EEF0F1;
+        box-sizing: border-box;
+      }
+    }
+    .input1{
+      margin-right: 15px;
+    }
+  }
+}
 
 .next_page{
   display: inline-block;
@@ -231,6 +354,79 @@
 
 
 @media (max-width: 1087px){
+  .checboxes_page2{
+    flex-direction: column !important;
+    .tools, .accommodation, .workwear, .transportation, .food{
+      width: 100%;
+      .title{
+      }
+      .radio_block{
+        margin-bottom: 3px;
+        /* для элемента input c type="radio" */
+        .custom-radio {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+        }
+        /* для элемента label связанного с .custom-radio */
+        .custom-radio+label {
+          display: inline-flex;
+          align-items: center;
+          user-select: none;
+          color: #BEC0C2;
+          font-size: 15px;
+          line-height: 18px;
+        }
+        /* создание в label псевдоэлемента  before со следующими стилями */
+        .custom-radio+label::before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          flex-shrink: 0;
+          flex-grow: 0;
+          background: #F9F9F9;
+          border: 1px solid #EEF0F1;
+          box-sizing: border-box;
+          border-radius: 50%;
+          margin-right: 0.5em;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 50% 50%;
+        }
+        /* стили при наведении курсора на радио */
+        .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+          border-color: #b3d7ff;
+        }
+        /* стили для активной радиокнопки (при нажатии на неё) */
+        .custom-radio:not(:disabled):active+label::before {
+          background-color: #b3d7ff;
+          border-color: #b3d7ff;
+        }
+        /* стили для радиокнопки, находящейся в фокусе */
+        .custom-radio:focus+label::before {
+        }
+        /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+        .custom-radio:focus:not(:checked)+label::before {
+          border-color: #80bdff;
+        }
+        /* стили для радиокнопки, находящейся в состоянии checked */
+        .custom-radio:checked+label::before {
+          border-color: white;
+          background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
+          box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
+        }
+        /* стили для радиокнопки, находящейся в состоянии disabled */
+        .custom-radio:disabled+label::before {
+          background-color: #e9ecef;
+        }
+      }
+    }
+    .transportation, .food{
+      margin-top: 30px;
+    }
+  }
+
   .specialization_search{
     flex-direction: row !important;
 
@@ -256,6 +452,9 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 24px;
+        img{
+          margin-left: 1px;
+        }
       }
     }
     .page_number_discription.active{
@@ -281,6 +480,31 @@
     .second_block{
       margin-left: 0;
       margin-top: 25px;
+    }
+  }
+
+  .object_infopmation_block{
+    .title{
+      display: flex;
+      .name{
+        margin-right: 3px;
+        display: inline-block;
+        width: 140px;
+        @include font9;
+      }
+      .desk{
+        color: #AAACAE;
+        @include font5;
+      }
+    }
+    .inputs_block{
+      display: block !important;
+      .input1, .input2{
+        width: 100% !important;
+      }
+      .input1{
+        margin-bottom: 15px;
+      }
     }
   }
 }
