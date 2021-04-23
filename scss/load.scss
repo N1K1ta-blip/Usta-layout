@@ -1,0 +1,76 @@
+@import "header_footer";
+@import "main_navigation";
+@import "fonts";
+@import "input";
+@import "information_field";
+
+main{
+  padding: 30px 0;
+}
+
+.content_block{
+  background: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  text-align: center;
+  padding: 220px 0;
+  margin-bottom: 60px;
+  .title{
+    color: #273142;
+    @include font2;
+    margin-bottom: 0;
+  }
+  .text{
+    color: #808896;
+    @include font3;
+    margin-top: 13px;
+  }
+}
+
+img.rot {
+  margin-top: 35px;
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+  width: 100px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1087px){
+  main{
+    padding: 30px 23px;
+  }
+
+  .content_block{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 60px;
+    .title{
+      color: #273142;
+      @include font2_2;
+      margin-bottom: 0;
+    }
+    .text{
+      color: #808896;
+      @include font3;
+      margin-top: 13px;
+    }
+  }
+}
