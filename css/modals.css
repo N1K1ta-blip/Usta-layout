@@ -377,208 +377,23 @@ main {
   padding: 30px 0;
 }
 
-.main_navigation {
-  display: flex;
+.content_block {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  text-align: center;
+  padding: 220px 0;
+  margin-bottom: 60px;
 }
-.main_navigation .main, .main_navigation .application, .main_navigation .workspace_number {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 15px;
-  color: #273142;
-  margin-right: 10px;
-}
-.main_navigation .application, .main_navigation .workspace_number {
-  margin-left: 10px;
-}
-.main_navigation .profile {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 15px;
-  color: #BEC0C2;
-  margin-left: 10px;
-}
-
-@media (max-width: 1087px) {
-  .main_navigation {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-  .main_navigation .second_arrow {
-    transform: rotate(180deg);
-    margin-right: -2px;
-  }
-  .main_navigation .profile, .main_navigation .main, .main_navigation .first_arrow, .main_navigation .workspace_number {
-    display: none;
-  }
-}
-.line {
-  margin: 35px 0;
-  width: 100%;
-  border: 1px solid #F6F6F6;
-}
-
-.page_title {
-  margin-top: 45px;
+.content_block .title {
   color: #273142;
   font-family: Gilroy;
   font-style: normal;
   font-weight: 600;
   font-size: 35px;
-  line-height: 42px;
-}
-
-.application_info {
-  padding: 15px;
-  margin-bottom: 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
-  border-radius: 10px;
-}
-.application_info .human_info {
-  display: flex;
-}
-.application_info .human_info .logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 4px;
-}
-.application_info .human_info .rating_name {
-  margin-left: 14px;
-}
-.application_info .human_info .rating_name .rating span {
-  color: #525A68;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-}
-.application_info .human_info .rating_name .rating .chat {
-  margin-left: 20px;
-}
-.application_info .human_info .rating_name p {
-  color: #273142;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-.application_info .line_block {
-  margin: 15px 0;
-  width: 100%;
-  border: 1px solid #F8F8F8;
-}
-.application_info .line_block2 {
-  margin: 70px 0 15px 0;
-  width: 100%;
-  border: 1px solid #F8F8F8;
-}
-.application_info .application {
-  display: flex;
-  flex-direction: column;
-}
-.application_info .application .text {
-  color: #808896;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-}
-.application_info .application .info {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -140px;
-}
-.application_info .application .info .local .title, .application_info .application .info .cash .title {
-  color: #BEC0C2;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  line-height: 37px;
   margin-bottom: 0;
-}
-.application_info .application .info .local .text, .application_info .application .info .cash .text {
-  color: #273142;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-}
-.application_info .application .info .local {
-  max-width: 300px;
-  margin-right: 25px;
-}
-.application_info .balance_button .search, .application_info .balance_button .top {
-  margin-right: 13px;
-  margin-top: 0;
-}
-.application_info .balance_button .sorting_button {
-  padding: 22px 20px;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #273142;
-  background: #FDFDFD;
-  border: 1px solid #F0F0F0;
-  box-sizing: border-box;
-  border-radius: 6px;
-}
-.application_info .balance_button .sorting_button.active {
-  color: #273142;
-  background: #FFFFFF;
-  border: 1px solid #B8BCC4;
-  box-sizing: border-box;
-  border-radius: 6px;
-}
-
-.castom_pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-.castom_pagination div {
-  padding: 10px 17px;
-  font-size: 15px;
-  line-height: 22px;
-  color: #BEC0C2;
-  margin: 0 12px;
-}
-.castom_pagination div:hover {
-  cursor: pointer;
-  color: #BEC0C2;
-}
-.castom_pagination .active {
-  color: #61ADE5;
-  border: 1px solid #61ADE5;
-  box-sizing: border-box;
-  border-radius: 22px;
-  padding: 9px 16px;
-}
-.castom_pagination .left_arrow {
-  transition: 0.3s ease;
-}
-.castom_pagination .left_arrow:hover {
-  cursor: pointer;
-  filter: contrast(10%);
-}
-.castom_pagination .right_arrow {
-  transform: rotate(180deg);
-  transition: 0.3s ease;
-}
-.castom_pagination .right_arrow:hover {
-  cursor: pointer;
-  filter: contrast(10%);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1087px) {
@@ -586,73 +401,30 @@ main {
     padding: 30px 23px;
   }
 
-  .page_title {
+  .content_block {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 60px;
+  }
+  .content_block .title {
+    color: #273142;
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
+    margin-bottom: 0;
   }
-
-  .application_info .line_block {
-    display: none;
-  }
-  .application_info .line_block2 {
-    display: none;
-  }
-  .application_info .line_block3 {
-    margin: 15px 0;
-    width: 100%;
-    border: 1px solid #F6F6F6;
-  }
-  .application_info .application {
-    margin-top: 15px;
-  }
-  .application_info .application .text {
+  .content_block .text {
     color: #808896;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .application_info .application .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 0px;
-  }
-  .application_info .application .info .local {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-  .application_info .balance_button {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 20px;
-  }
-  .application_info .balance_button .search, .application_info .balance_button .top {
-    margin-right: 0px;
-    margin-top: 15px;
-  }
-  .application_info .balance_button .sorting_button {
-    padding: 22px 20px;
     font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #273142;
-    background: #FDFDFD;
-    border: 1px solid #F0F0F0;
-    box-sizing: border-box;
-    border-radius: 6px;
-  }
-  .application_info .balance_button .sorting_button.active {
-    color: #273142;
-    background: #FFFFFF;
-    border: 1px solid #B8BCC4;
-    box-sizing: border-box;
-    border-radius: 6px;
+    margin-top: 13px;
   }
 }

@@ -109,7 +109,10 @@
         <div class="specialization">
           <div class="specialization_search" id="type_page" data-value="">
             <p>Специализация</p>
-            <input type="text" placeholder="Поиск по специализациям">
+            <div class="new_password_input">
+              <input type="text"  data-value='new_password_2' id="input_new_password_5" required>
+              <label for="new_password_5" data-value='new_password_2'>Поиск по специализациям</label>
+            </div>
           </div>
           <div class="checboxes">
             <div class="first_col">
@@ -257,9 +260,15 @@
           </div>
         </div>
         <div class="filter">
-          <input type="text" placeholder="Город">
-          <input type="text" placeholder="Поиск по ключевым словам">
-          <a class="button search">
+          <div class="new_password_input">
+            <input type="text" id="input_new_password_1" required>
+            <label for="new_password_1" >Город</label>
+          </div>
+          <div class="new_password_input" style="margin-top: 15px;">
+            <input type="text" id="input_new_password_2" required>
+            <label for="new_password_2">Поиск по ключевым словам</label>
+          </div>
+          <a class="button search" style="margin-top: 15px;">
             Применить фильтр
           </a>
         </div>

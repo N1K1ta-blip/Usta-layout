@@ -246,6 +246,9 @@ a {
   color: #FFFFFF;
   margin: 0 15px;
 }
+.first_footer_block_column2 a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .first_footer_block_column3 {
   text-align: right;
@@ -615,6 +618,9 @@ a {
   line-height: 17px;
   color: #FFFFFF;
   margin: 0 15px;
+}
+.first_footer_block_column2 a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .first_footer_block_column3 {

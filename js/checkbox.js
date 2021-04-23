@@ -10,7 +10,7 @@ function Check(e) {
       if (e.checked == true) {
         for (var i = 0; i < labels.length; i++) {
           if (labels[i].getAttribute('for') == e.getAttribute('id')) {
-            if (count2 == 0) {
+            if (count3 == 0) {
               first_input = e.getAttribute('id')
             }
             if (count3 == 1) {

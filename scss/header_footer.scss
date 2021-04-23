@@ -229,6 +229,10 @@ a{
     line-height: 17px;
     color: #FFFFFF;
     margin: 0 15px;
+    transition: .3s ease;
+    &:hover{
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
 .first_footer_block_column3{

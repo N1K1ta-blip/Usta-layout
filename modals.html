@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/modals.css">
 </head>
 <body>
   <input type="hidden" id="Page_class" value="executor">
@@ -95,12 +95,20 @@
   <main>
     <div class="container">
       <div class="content_block">
-        <p class="title">Текст для загрузки страницы</p>
-        <p class="text">Пожалуйста, не закрывайте страницу</p>
-        <img class="rot" src="./img/loader.svg">
+        <p class="title">Модальные окна</p>
+        <a class="button sorting_button" onclick="Category(this)">
+          Вариант создания заявки
+        </a>
       </div>
-    </div>
+    </div> 
   </main>
+  <div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    fghj
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
   <footer>
     <div class="first_footer_block">
       <div class="container">
@@ -108,7 +116,7 @@
           <div class="first_footer_block_column1">
             <p class="footer_logo">Usta.ru</p>
             <p class="footer_context">2021 © Все права защишены</p>
-          </div> 
+          </div>
           <div class="first_footer_block_column2">
             <a>
               Каталог заявок
@@ -143,11 +151,10 @@
 </body>
 <script src="./js/header.js"></script>
 <script src="./js/my_applications_executor.js"></script>
+<script src="./js/modals.js"></script>
 <script>
-  const width = window.screen.width;
-
-  if (width < 1087) {
-    document.getElementsByClassName('search')[1].innerHTML = '<img src="./img/icons/down2.svg" alt="">'
-  }
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('is-active')
+})
 </script>
 </html>

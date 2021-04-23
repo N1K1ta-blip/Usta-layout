@@ -7,8 +7,16 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/load.css">
+  <link rel="stylesheet" href="css/modals.css">
 </head>
+<style>
+  .list_block{
+    text-align:center;
+  }
+  li{
+    margin: 10px;
+  }
+</style>
 <body>
   <input type="hidden" id="Page_class" value="executor">
   <label for=""></label>
@@ -93,11 +101,35 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <div class="content_block">
-        <p class="title">Текст для загрузки страницы</p>
-        <p class="text">Пожалуйста, не закрывайте страницу</p>
-        <img class="rot" src="./img/loader.svg">
+    <div class="conteiner">
+      <div class="list_block">
+      <h1>Готовые страницы</h1>
+        <ol type="1">
+          <li>Мои заявки (исполнитель) - <a href="./my_applications_executor.html">my_applications_exutor</a></li>
+          <li>Профиль (заказчик) - <a href="client_profile.html">client_profile</a></li>
+          <li>Профиль (исполнитель) - <a href="executor_profile.html">executor_profile</a></li>
+          <li>Страница визитка (заказчик) - <a href="client_business_card_page.html">client_business_card_page</a></li>
+          <li>Страница визитка (исполнитель) - <a href="executor_business_card_page.html">executor_business_card_page</a></li>
+          <li>Каталог заявок - <a href="application_catalog.html">application_catalog</a></li>
+          <li>Каталог бригад - <a href="brigade_catalog.html">brigade_catalog</a></li>
+          <li>Создание новой заявки - шаг 1 - <a href="create_new_application_page1.html">create_new_application_page1</a></li>
+          <li>Создание новой заявки - шаг 2 - <a href="create_new_application_page2.html">create_new_application_page2</a></li>
+          <li>Создание новой заявки - шаг 3 - <a href="create_new_application_page3.html">create_new_application_page3</a></li>
+          <li>Создание новой заявки - шаг 4.1 - <a href="create_new_application_page4.html">create_new_application_page4</a></li>
+          <li>Создание новой заявки - шаг 4.2 - <a href="create_new_application_page4.html">create_new_application_page4</a></li>
+          <li>Создание новой заявки - шаг 5  - <a href="create_new_application_page5.html">create_new_application_page5.html</a></li>
+          <li>Страница визитка созданной заявки v.1 - <a href="page_created_application.html">page_created_application</a></li>
+          <li>Страница визитка созданной заявки v.2- <a href="page_created_application_v2.html">page_created_application_v2</a></li>
+          <li>Страница оплаты (бригада) - <a href="payment_page_customer.html">payment_page_customer</a></li>
+          <li>Страница оплаты (заказчик) - <a href="payment_page_customer.html">payment_page_customer</a></li>
+          <li>Отклики на заявки - <a href="responses_application.html">responses_application</a></li>
+          <li>Рабочая область (исполнитель) - <a href="workspace_executor.html">workspace_executor</a></li>
+          <li>Рабочая область (заказчик) - <a href="workspace_client.html">workspace_client</a></li>
+          <li>Рабочая область после завершения работы - <a href="workspase_after_work.html">workspace_after_work</a></li>
+          <li>Личные сообщения - <a href="private_messages.html">private_message</a></li>
+          <li>Чат - <a href="chat.html">chat</a></li>
+          <li>Страница загрузки - <a href="load.html">load</a></li>
+        </ol>
       </div>
     </div>
   </main>
@@ -108,7 +140,7 @@
           <div class="first_footer_block_column1">
             <p class="footer_logo">Usta.ru</p>
             <p class="footer_context">2021 © Все права защишены</p>
-          </div> 
+          </div>
           <div class="first_footer_block_column2">
             <a>
               Каталог заявок
@@ -143,11 +175,5 @@
 </body>
 <script src="./js/header.js"></script>
 <script src="./js/my_applications_executor.js"></script>
-<script>
-  const width = window.screen.width;
-
-  if (width < 1087) {
-    document.getElementsByClassName('search')[1].innerHTML = '<img src="./img/icons/down2.svg" alt="">'
-  }
-</script>
+<script src="./js/modals.js"></script>
 </html>
