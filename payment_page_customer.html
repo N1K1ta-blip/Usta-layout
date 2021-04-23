@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/payment_page_customer.css">
+</head>
+<body>
+  <input type="hidden" id="Page_class" value="client">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Главная</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="first_arrow">
+        <a href="#" class="application">Создание заявки</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="second_arrow">
+        <a href="#" class="profile">Оплата</a>
+      </div>
+
+      <div class="cost_block">
+        <div class="link">
+          <div class="text">
+            <p>Опубликовать на</p>
+            <a href="#">Главной странице</a>
+          </div>
+          <div class="views">
+            x5 просмотров
+          </div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="buttons category_button" style="margin: 0;">
+          <a class="button sorting_button active" onclick="Category(this)">
+            7 дней - 840 руб.
+          </a>
+          <a class="button sorting_button" onclick="Category(this)">
+            14 дней - 1540 руб.
+          </a>
+          <a class="button sorting_button" onclick="Category(this)">
+            1 месяц - 3000 руб.
+          </a>
+        </div>
+      </div>
+
+      <div class="cost_block">
+        <div class="link">
+          <div class="text">
+            <p>Опубликовать на верхних строчках</p>
+            <a href="#">Каталога Заявок</a>
+          </div>
+          <div class="views">
+            x3 просмотров
+          </div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="buttons category_button" style="margin: 0;">
+          <a class="button sorting_button active" onclick="Category(this)">
+            7 дней - 490 руб.
+          </a>
+          <a class="button sorting_button" onclick="Category(this)">
+            14 дней - 840 руб.
+          </a>
+          <a class="button sorting_button" onclick="Category(this)">
+            1 месяц - 1500 руб.
+          </a>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="cost_block">
+        <div class="pay">
+          <div class="text">
+            <p>Оплатить со счёта на сайте</p>
+          </div>
+        </div>
+        <div class="wallet">
+          <img src="./img/icons/wallet_green.svg" alt="">
+          <div class="text">
+            <p class="title">Текущий баланс</p>
+            <p class="balance">0.0 рублей</p>
+          </div>
+        </div>
+        <div class="balance_button">
+          <a class="button search">
+            Оплатить с текущего баланса
+          </a>
+          <a class="button top">
+            Пополнить баланс
+          </a>
+        </div>
+      </div>
+
+      <div class="cost_block">
+        <div class="pay">
+          <div class="text">
+            <p>Общая сумма: 2 000 рублей</p>
+            <p class="hint">Выберите способ оплаты</p>
+          </div>
+        </div>
+        <div class="payment_method">
+          <div class="first_col">
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="sber" value="green">
+              <label for="sber">Сбербанк Онлайн</label>
+            </div>
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="wmr" value="green">
+              <label for="wmr">WebMoney (WMR)</label>
+            </div>
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="wmr2" value="green">
+              <label for="wmr2">WebMoney (WMR)</label>
+            </div>
+          </div>
+          <div class="second_col">
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="visa" value="green">
+              <label for="visa">Банковская карта (Visa, MasterCard, Maestro, МИР, JCB, DCL)</label>
+            </div>
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="ya" value="green">
+              <label for="ya">Яндекс Деньги</label>
+            </div>
+            <div class="radio_block">
+              <input class="custom-radio" name="tools" type="radio" id="qiwi" value="green">
+              <label for="qiwi">QIWI Кошелёк</label>
+            </div>
+          </div>
+        </div>
+        <div class="balance_button">
+          <a class="button search">
+            Оформить заказ
+          </a>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/my_applications_executor.js"></script>
+</html>

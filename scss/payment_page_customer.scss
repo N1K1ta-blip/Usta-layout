@@ -1,0 +1,225 @@
+@import "header_footer";
+@import "main_navigation";
+@import "fonts";
+@import "input";
+@import "information_field";
+
+main{
+  padding: 30px 0;
+}
+
+@include three_param;
+@include three_param_2;
+
+.cost_block{
+  margin-top: 45px;
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  .link{
+    display: flex;
+    justify-content: space-between;
+    .text{
+      margin-top: 20px;
+      margin-left: 20px;
+      display: flex;
+      p{
+        color: #273142;
+        @include font2_2;
+        font-weight: 500;
+      }
+      a{
+        margin-left: 8px;
+        color: #61ADE6;
+        @include font2_2;
+        font-weight: 500;
+        border-bottom: 2px solid #61ADE6;
+        &:hover{
+          color: #8FCBF6;
+          border-bottom: 2px solid #8FCBF6;
+        }
+      }
+    }
+    .views{
+      padding: 8px 15px;
+      color: #6CD196;
+      @include font9;
+      background: #FFFFFF;
+      border: 1px dashed #6CD196;
+      box-sizing: border-box;
+      border-radius: 6px;
+      height: 40px;
+    }
+  }
+  .pay{
+    .text{
+      margin-top: 20px;
+      margin-left: 20px;
+      p{
+        color: #273142;
+        @include font16;
+        font-weight: 500;
+      }
+      .hint{
+        margin-top: 6px;
+        color: #808896;
+        @include font14;
+      }
+  }}
+  .wallet{
+    margin-top: 19px;
+    margin-left: 20px;
+    display: flex;
+    .text{
+      margin-left: 13px;
+      margin-top: 12px;
+      .title{
+        color: #BEC0C2;
+        @include font8;
+        margin-bottom: 4px;
+      }
+      .balance{
+        margin-top: 0;
+        color: #273142;
+        @include font11;
+      }
+    }
+  }
+  .balance_button{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .top{
+      margin-left: 15px;
+    }
+    .search{
+
+      background: linear-gradient(89.23deg, #508ED7 0%, #80B4F0 100%);
+    }
+  }
+  .description{
+    max-width: 900px;
+    margin-top: 10px;
+    margin-left: 20px;
+    @include font17;
+    color: #808896;
+  }
+  .category_button{
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+    .sorting_button{
+      padding: 20px 20px;
+      @include font3;
+      color: #273142;
+      background: #FDFDFD;
+      border: 1px solid #F0F0F0;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+    .sorting_button.active{
+      color: #273142;
+      background: #FFFFFF;
+      border: 1px solid #B8BCC4;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+  }
+  .payment_method{
+    display: flex;
+    margin-top: 25px;
+  }
+}
+
+.radio_block{
+  margin-bottom: 3px;
+  margin-left: 20px;
+  /* для элемента input c type="radio" */
+  @include radio;
+}
+
+.line{
+  margin: 35px 0;
+  width: 100%;
+  border: 1px solid #F6F6F6;
+}
+@media (max-width: 1087px) {
+  main{
+    padding: 30px 23px;
+  }
+  .cost_block{
+    .link{
+      display: flex;
+      .text{
+        margin-top: 20px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        p{
+          color: #273142;
+          @include font16;
+          font-weight: 500;
+        }
+        a{
+          width: 200px;
+          margin-left: 0;
+          color: #61ADE6;
+          @include font16;
+          font-weight: 500;
+          border-bottom: 2px solid #61ADE6;
+          &:hover{
+            color: #8FCBF6;
+            border-bottom: 2px solid #8FCBF6;
+          }
+        }
+      }
+      .views{
+        display: none;
+      }
+    }
+    .description{
+      margin-left: 0;
+    }
+    .category_button{
+      margin-left: 0 !important;
+      .sorting_button{
+        width: 100%;
+        margin-right: 0 !important;
+      }
+      .sorting_button.active{
+        color: #273142;
+        background: #FFFFFF;
+        border: 1px solid #B8BCC4;
+        box-sizing: border-box;
+        border-radius: 6px;
+      }
+    }
+    .pay{
+      .text{
+        margin-left: 0px;
+        p{
+          @include font15;
+        }
+    }}
+    .wallet{
+      margin-left: 0px;
+      }
+    .balance_button{
+      margin-left: 0px;
+      margin-top: 0px;
+      .top{
+        margin-left: 0px;
+      }
+      .search{
+        margin-top: 20px;
+      }
+    }
+    .payment_method{
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  .radio_block{
+    margin-left: 0px;
+  }
+}

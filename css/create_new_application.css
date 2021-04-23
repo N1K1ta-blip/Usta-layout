@@ -7115,6 +7115,9 @@ main {
   background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
   box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
 }
+.checboxes_page2 .tools .radio_block .custom-radio:checked ~ label, .checboxes_page2 .accommodation .radio_block .custom-radio:checked ~ label, .checboxes_page2 .workwear .radio_block .custom-radio:checked ~ label, .checboxes_page2 .transportation .radio_block .custom-radio:checked ~ label, .checboxes_page2 .food .radio_block .custom-radio:checked ~ label {
+  color: #525A68;
+}
 .checboxes_page2 .tools .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .accommodation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .workwear .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .transportation .radio_block .custom-radio:disabled + label::before, .checboxes_page2 .food .radio_block .custom-radio:disabled + label::before {
   background-color: #e9ecef;
 }

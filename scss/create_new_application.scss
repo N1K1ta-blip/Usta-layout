@@ -165,62 +165,7 @@
     .radio_block{
       margin-bottom: 3px;
       /* для элемента input c type="radio" */
-      .custom-radio {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-      }
-      /* для элемента label связанного с .custom-radio */
-      .custom-radio+label {
-        display: inline-flex;
-        user-select: none;
-        color: #BEC0C2;
-        font-size: 15px;
-        line-height: 18px;
-      }
-      /* создание в label псевдоэлемента  before со следующими стилями */
-      .custom-radio+label::before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-        flex-grow: 0;
-        background: #F9F9F9;
-        border: 1px solid #EEF0F1;
-        box-sizing: border-box;
-        border-radius: 50%;
-        margin-right: 0.5em;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 50% 50%;
-      }
-      /* стили при наведении курсора на радио */
-      .custom-radio:not(:disabled):not(:checked)+label:hover::before {
-        border-color: #b3d7ff;
-      }
-      /* стили для активной радиокнопки (при нажатии на неё) */
-      .custom-radio:not(:disabled):active+label::before {
-        background-color: #b3d7ff;
-        border-color: #b3d7ff;
-      }
-      /* стили для радиокнопки, находящейся в фокусе */
-      .custom-radio:focus+label::before {
-      }
-      /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-      .custom-radio:focus:not(:checked)+label::before {
-        border-color: #80bdff;
-      }
-      /* стили для радиокнопки, находящейся в состоянии checked */
-      .custom-radio:checked+label::before {
-        border-color: white;
-        background: linear-gradient(45deg, #61ADE5 0%, #8FC9F3 100%);
-        box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.08);
-      }
-      /* стили для радиокнопки, находящейся в состоянии disabled */
-      .custom-radio:disabled+label::before {
-        background-color: #e9ecef;
-      }
+      @include radio;
     }
   }
   .transportation, .food{
