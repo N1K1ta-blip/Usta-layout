@@ -746,7 +746,7 @@ main {
 .main_navigation {
   display: flex;
 }
-.main_navigation .main, .main_navigation .application {
+.main_navigation .main, .main_navigation .application, .main_navigation .workspace_number {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
@@ -755,7 +755,7 @@ main {
   color: #273142;
   margin-right: 10px;
 }
-.main_navigation .application {
+.main_navigation .application, .main_navigation .workspace_number {
   margin-left: 10px;
 }
 .main_navigation .profile {
@@ -778,7 +778,7 @@ main {
     transform: rotate(180deg);
     margin-right: -2px;
   }
-  .main_navigation .profile, .main_navigation .main, .main_navigation .first_arrow {
+  .main_navigation .profile, .main_navigation .main, .main_navigation .first_arrow, .main_navigation .workspace_number {
     display: none;
   }
 }

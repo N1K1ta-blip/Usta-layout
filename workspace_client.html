@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/workspace.css">
+</head>
+<body onclick="Hid_input()">
+  <input type="hidden" id="Page_class" value="client">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Мои заявки</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="first_arrow">
+        <a href="#" class="workspace_number">№ 00001</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="first_arrow">
+        <a href="#" class="application">Отклики на заявку</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="second_arrow">
+        <a href="#" class="profile">Отклики на заявку</a>
+      </div>
+
+      <div class="page_title">
+        Заголовок заявки
+      </div>
+
+      <div class="description">
+        <div class="info">
+          <div class="logo">
+            <img src="./img/components/logos/executor_logo.png" alt="">
+          </div>
+          <div class="name_online">
+            <p class="name">ОАО Технострой</p>
+            <p class="online">Был в сети: <span class="time">21.11.2020 в 17:00</span></p>
+          </div>
+        </div>
+        <div class="status">
+          <div class="icon">
+            <img src="./img/icons/status.svg" alt="">
+          </div>
+          <div class="status_text">
+            <p class="name">Статус</p>
+            <p class="online">В работе</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="information_block">
+        <p class="title">Информация о заявке</p>
+        <div class="field">
+          <div class="icon">
+            <img src="./img/client_profile/doc.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title">Разнорабочие</p>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="field">
+          <div class="icon">
+            <img src="./img/client_profile/locatin.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title">Город</p>
+            <p class="text">
+              Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="field">
+          <div class="icon">
+            <img src="./img/client_profile/tools.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title">Тип работ</p>
+            <p class="text">
+              Монтаж кирпичной кладки
+            </p>
+          </div>
+        </div>
+        <div class="field">
+          <div class="icon">
+            <img src="./img/client_profile/money.svg" alt="">
+          </div>
+          <div class="content">
+            <p class="title">Стоимость</p>
+            <p class="text">
+              5 000 руб/м3
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="balance_button">
+        <a class="button search">
+          Принять работу
+        </a>
+        <a class="button sorting_button" onclick="Category(this)">
+          Перейти к заявке
+        </a>
+      </div>
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/inputs.js"></script>
+</html>

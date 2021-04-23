@@ -1,12 +1,12 @@
 @mixin three_param{
   .main_navigation{
     display: flex;
-    .main, .application{
+    .main, .application, .workspace_number{
       @include font1;
       color: #273142;
       margin-right: 10px;
     }
-    .application{
+    .application, .workspace_number{
       margin-left: 10px;
     }
     .profile{
@@ -27,7 +27,7 @@
         transform: rotate(180deg);
         margin-right: -2px;
       }
-      .profile, .main, .first_arrow{
+      .profile, .main, .first_arrow, .workspace_number{
         display: none;
       }
     }
