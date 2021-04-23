@@ -1,0 +1,15 @@
+@mixin information_field{
+  padding: 10px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
+  .title{
+    color: #BEC0C2;
+    @include font8;
+    margin-bottom: 4px;
+  }
+  .text{
+    @include font11;
+    color: #525A68;
+  }
+}

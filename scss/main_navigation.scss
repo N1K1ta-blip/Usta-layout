@@ -1,0 +1,35 @@
+@mixin three_param{
+  .main_navigation{
+    display: flex;
+    .main, .application{
+      @include font1;
+      color: #273142;
+      margin-right: 10px;
+    }
+    .application{
+      margin-left: 10px;
+    }
+    .profile{
+      @include font1;
+      color: #BEC0C2;
+      margin-left: 10px;
+    }
+  }
+}
+
+@mixin three_param_2{
+  @media (max-width: 1087px) {
+    .main_navigation{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      .second_arrow{
+        transform: rotate(180deg);
+        margin-right: -2px;
+      }
+      .profile, .main, .first_arrow{
+        display: none;
+      }
+    }
+  }
+}

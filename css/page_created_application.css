@@ -412,153 +412,128 @@ main {
     display: none;
   }
 }
-.main_title {
-  margin-top: 45px;
-  display: flex;
-  justify-content: space-between;
-}
-.main_title .title {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 37px;
-  color: #273142;
-}
-.main_title .editing {
-  display: flex;
-}
-.main_title .editing img {
-  margin-top: -20px;
-}
-.main_title .editing p {
+.line {
   width: 100%;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  margin-top: 10px;
-  color: #273142;
+  border: 1px solid #F8F8F8;
+  margin: 30px 0;
 }
 
-.general_information, .child_accounts {
-  padding: 30px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
-  border-radius: 6px;
-  margin-bottom: 25px;
+.company_info {
+  margin-top: 60px;
+  display: flex;
 }
-.general_information .general_information_title, .general_information .child_accounts_title, .child_accounts .general_information_title, .child_accounts .child_accounts_title {
+.company_info .logo {
+  width: 70px;
+  height: 70px;
+  border: 1px dashed #F4F4F4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.company_info .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.company_info .information {
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+}
+.company_info .information .title {
+  color: #273142;
   font-family: Gilroy;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 22px;
 }
-.general_information .add_block, .child_accounts .add_block {
-  margin-top: 24px;
+.company_info .information .verification {
+  display: flex;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.company_info .information .verification .verification1, .company_info .information .verification .verification2 {
   display: flex;
 }
-.general_information .add_block img, .child_accounts .add_block img {
-  width: 37px;
-  height: 37px;
-}
-.general_information .add_block .add, .child_accounts .add_block .add {
-  margin-left: 15px;
-  margin-top: 6px;
-}
-.general_information .add_block .add .add_title, .child_accounts .add_block .add .add_title {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #273142;
-  transition: 0.3s ease;
-  float: left;
-}
-.general_information .add_block .add .add_title:hover, .child_accounts .add_block .add .add_title:hover {
-  color: #61ADE5;
-}
-.general_information .add_block .add img, .child_accounts .add_block .add img {
-  margin-left: 12px;
-  width: 28px;
-  height: 28px;
-  margin-top: -5px;
-}
-.general_information .question_img, .child_accounts .question_img {
-  margin-left: 15px;
-  width: 28px;
-  height: 28px;
-  margin-top: 0px;
-}
-.general_information .child_accounts_block, .child_accounts .child_accounts_block {
-  margin-top: 15px;
-  padding: 5px;
-  background: #FCFCFC;
-  border: 1px solid #F8F8F8;
-  box-sizing: border-box;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.general_information .child_accounts_block .child_accounts_block_title, .child_accounts .child_accounts_block .child_accounts_block_title {
-  padding: 10px 20px;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #525A68;
-}
-.general_information .child_accounts_block .child_accounts_block_edit, .child_accounts .child_accounts_block .child_accounts_block_edit {
-  display: flex;
-}
-.general_information .child_accounts_block .child_accounts_block_edit .edit_block, .general_information .child_accounts_block .child_accounts_block_edit .delete_block, .child_accounts .child_accounts_block .child_accounts_block_edit .edit_block, .child_accounts .child_accounts_block .child_accounts_block_edit .delete_block {
-  padding: 7px 25px 5px 25px;
-  width: 68px;
-  height: 38px;
-  background: #FFFFFF;
-  border: 1px solid #F8F8F8;
-  box-sizing: border-box;
-  border-radius: 6px;
-  margin-left: 5px;
-  transition: 0.3s ease;
-}
-.general_information .child_accounts_block .child_accounts_block_edit .edit_block img, .general_information .child_accounts_block .child_accounts_block_edit .delete_block img, .child_accounts .child_accounts_block .child_accounts_block_edit .edit_block img, .child_accounts .child_accounts_block .child_accounts_block_edit .delete_block img {
-  width: 14px !important;
-  height: 14px !important;
-}
-.general_information .child_accounts_block .child_accounts_block_edit .edit_block:hover, .child_accounts .child_accounts_block .child_accounts_block_edit .edit_block:hover {
-  border: 1px solid #273142;
-  cursor: pointer;
-}
-.general_information .child_accounts_block .child_accounts_block_edit .delete_block:hover, .child_accounts .child_accounts_block .child_accounts_block_edit .delete_block:hover {
-  border: 1px solid #E56868;
-  cursor: pointer;
-}
-.general_information .general_information_content .info_block, .child_accounts .general_information_content .info_block {
-  margin-top: 24px;
-  display: flex;
-}
-.general_information .general_information_content .info_block img, .child_accounts .general_information_content .info_block img {
-  width: 37px;
-  height: 37px;
-}
-.general_information .general_information_content .info_block .info, .child_accounts .general_information_content .info_block .info {
-  margin-left: 15px;
-}
-.general_information .general_information_content .info_block .info .info_title, .child_accounts .general_information_content .info_block .info .info_title {
+.company_info .information .verification .verification1 p, .company_info .information .verification .verification2 p {
   font-family: Gilroy;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  color: #BEC0C2;
+  margin-top: 15px;
+  color: #525A68;
 }
-.general_information .general_information_content .info_block .info .info_number, .child_accounts .general_information_content .info_block .info .info_number {
+.company_info .information .verification .verification2 {
+  margin-left: 10px;
+}
+
+.description_block .main_title .title {
+  color: #273142;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+}
+.description_block .location {
+  display: flex;
+  margin-top: 20px;
+}
+.description_block .location .icon {
+  width: 37px;
+  height: 37px;
+}
+.description_block .location .text {
+  margin-left: 15px;
+}
+.description_block .location .text .title_city {
+  color: #BEC0C2;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.description_block .location .text .city {
+  color: #525A68;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   margin-top: 4px;
+}
+.description_block .description_text {
+  margin-top: 20px;
+  color: #808896;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 650px;
+}
+.description_block .fields {
+  margin-top: 30px;
+  display: flex;
+}
+.description_block .fields .type, .description_block .fields .quantity, .description_block .fields .cash {
+  width: 100%;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
+}
+.description_block .fields .type .title, .description_block .fields .quantity .title, .description_block .fields .cash .title {
+  color: #BEC0C2;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+.description_block .fields .type .text, .description_block .fields .quantity .text, .description_block .fields .cash .text {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
@@ -566,41 +541,103 @@ main {
   line-height: 19px;
   color: #525A68;
 }
-.general_information .general_information_content .add_block, .child_accounts .general_information_content .add_block {
-  margin-top: 24px;
+.description_block .fields .quantity {
+  margin: 0 15px;
+}
+.description_block .fields_2 {
+  margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.general_information .general_information_content .add_block img, .child_accounts .general_information_content .add_block img {
-  width: 37px;
-  height: 37px;
+.description_block .fields_2 .type, .description_block .fields_2 .quantity {
+  width: 100%;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
 }
-.general_information .general_information_content .add_block .add, .child_accounts .general_information_content .add_block .add {
-  margin-left: 15px;
-  margin-top: 6px;
+.description_block .fields_2 .type .title, .description_block .fields_2 .quantity .title {
+  color: #BEC0C2;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
 }
-.general_information .general_information_content .add_block .add .add_title, .child_accounts .general_information_content .add_block .add .add_title {
+.description_block .fields_2 .type .text, .description_block .fields_2 .quantity .text {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #273142;
-  transition: 0.3s ease;
-  float: left;
+  color: #525A68;
 }
-.general_information .general_information_content .add_block .add .add_title:hover, .child_accounts .general_information_content .add_block .add .add_title:hover {
-  color: #61ADE5;
+.description_block .fields_2 .quantity {
+  margin-top: 15px;
 }
-.general_information .general_information_content .add_block .add img, .child_accounts .general_information_content .add_block .add img {
-  margin-left: 12px;
-  width: 28px;
-  height: 28px;
-  margin-top: -5px;
-}
-.general_information .general_information_content .line, .child_accounts .general_information_content .line {
+.description_block .reaction {
   width: 100%;
-  border: 1px solid #F8F8F8;
-  margin: 15px 0;
+  text-align: right;
+}
+.description_block .reaction .search {
+  margin-top: -260px;
+}
+
+.general_information_block {
+  padding: 25px;
+  background: #FBFBFB;
+  border: 1px solid #F7F7F7;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+.general_information_block .title p {
+  color: #273142;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.general_information_block .fields .field {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
+}
+.general_information_block .fields .field .title {
+  color: #BEC0C2;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+.general_information_block .fields .field .text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #525A68;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last_button {
+  margin-top: 30px;
+  text-align: center;
+}
+.last_button .search {
+  padding: 19px 186px;
 }
 
 @media (max-width: 1087px) {
@@ -608,80 +645,122 @@ main {
     padding: 30px 23px;
   }
 
-  .main_title {
-    margin-top: 45px;
-    display: flex;
-    justify-content: space-between;
+  .company_info .logo {
+    width: 70px;
+    height: 70px;
   }
-  .main_title .title {
+  .company_info .information {
+    margin-left: 15px;
+  }
+  .company_info .information .verification {
+    flex-direction: column;
+  }
+  .company_info .information .verification .verification2 {
+    margin-left: 0;
+    margin-top: -10px;
+  }
+
+  .description_block .main_title .title {
+    color: #273142;
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 35px;
-    color: #273142;
+    font-size: 24px;
+    line-height: 29px;
   }
-  .main_title .editing {
-    display: flex;
+  .description_block .fields {
+    flex-direction: column;
   }
-  .main_title .editing img {
-    margin-top: -20px;
+  .description_block .fields .quantity {
+    margin: 15px 0;
   }
-  .main_title .editing p {
-    display: none;
+  .description_block .reaction {
+    width: 100%;
+    text-align: center;
   }
-
-  .general_information, .child_accounts {
-    padding: 25px 15px;
-  }
-  .general_information .general_information_title, .general_information .child_accounts_title, .child_accounts .general_information_title, .child_accounts .child_accounts_title {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .general_information .general_information_content .info_block, .child_accounts .general_information_content .info_block {
-    margin-top: 24px;
-    display: flex;
-  }
-  .general_information .general_information_content .info_block img, .child_accounts .general_information_content .info_block img {
-    width: 37px;
-    height: 37px;
-  }
-  .general_information .general_information_content .info_block .info .info_number, .child_accounts .general_information_content .info_block .info .info_number {
-    margin-top: 4px;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #525A68;
-  }
-  .general_information .general_information_content .info_block .add .add_title, .child_accounts .general_information_content .info_block .add .add_title {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  .child_accounts_block .child_accounts_block_title {
-    padding: 10px 0 10px 10px !important;
-    font-size: 15px !important;
-    line-height: 18px !important;
-  }
-  .child_accounts_block .child_accounts_block_edit {
-    display: flex;
-  }
-  .child_accounts_block .child_accounts_block_edit .edit_block, .child_accounts_block .child_accounts_block_edit .delete_block {
-    padding: 7px 15px 5px 15px !important;
-    width: 48px !important;
-    height: 28px;
+  .description_block .reaction .search {
     margin-top: 15px;
   }
-  .child_accounts_block .child_accounts_block_edit .edit_block img, .child_accounts_block .child_accounts_block_edit .delete_block img {
-    width: 14px !important;
-    height: 14px !important;
+
+  .last_button .search {
+    padding: 19px 0;
   }
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_left {
+  left: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.slider__control_right {
+  right: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("../img/page_created_application/left_slider_arrow.svg");
+}
+
+.slider__control_left:active::before {
+  background-image: url("../img/page_created_application/active_slider_arrow.svg");
+  transform: rotate(180deg);
+}
+
+.slider__control_right::before {
+  background-image: url("../img/page_created_application/left_slider_arrow.svg");
+  transform: rotate(180deg);
+}
+
+.slider__control_right:active::before {
+  background-image: url("../img/page_created_application/active_slider_arrow.svg");
+  transform: rotate(0deg);
+}
+
+.slider__item > div {
+  text-align: center;
 }

@@ -768,6 +768,20 @@ main {
   margin-left: 10px;
 }
 
+@media (max-width: 1087px) {
+  .main_navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .main_navigation .second_arrow {
+    transform: rotate(180deg);
+    margin-right: -2px;
+  }
+  .main_navigation .profile, .main_navigation .main, .main_navigation .first_arrow {
+    display: none;
+  }
+}
 .main_title {
   margin-top: 45px;
   display: flex;
@@ -962,19 +976,6 @@ main {
 @media (max-width: 1087px) {
   main {
     padding: 30px 23px;
-  }
-
-  .main_navigation {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-  .main_navigation .second_arrow {
-    transform: rotate(180deg);
-    margin-right: -2px;
-  }
-  .main_navigation .profile, .main_navigation .main, .main_navigation .first_arrow {
-    display: none;
   }
 
   .main_title {

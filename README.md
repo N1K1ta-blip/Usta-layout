@@ -14,12 +14,12 @@
   <li>Создание новой заявки - шаг 4.1 - create_new_application_page4</li>
   <li>Создание новой заявки - шаг 4.2 - create_new_application_page4</li>
   <li>Создание новой заявки - шаг 5  - create_new_application_page5</li>
+  <li>Страница визитка созданной заявки v.1 - page_created_application</li>
+  <li>Страница визитка созданной заявки v.2- page_created_application_v2</li>
 </ul>
 
 <h4>Нужно сделать</h4>
 <ul>
-  <li>Страница визитка созданной заявки v.1</li>
-  <li>Страница визитка созданной заявки v.2</li>
   <li>Страница оплаты (бригада)</li>
   <li>Страница оплаты (заказчик)</li>
   <li>Отклики на заявки</li>

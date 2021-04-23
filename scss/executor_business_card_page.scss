@@ -1,6 +1,7 @@
 @import "header_footer";
 @import "fonts";
 @import "client_business_card_page";
+@import "information_field";
 
 .execurot_photos{
   display: flex;
@@ -112,19 +113,7 @@
     display: flex;
     margin-top: 19px;
     .citizenship, .actual_size, .potential_size, .city, .area{
-      padding: 10px 15px;
-      background: #FFFFFF;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.01);
-      border-radius: 6px;
-      .title{
-        color: #BEC0C2;
-        @include font8;
-        margin-bottom: 4px;
-      }
-      .text{
-        @include font11;
-        color: #525A68;
-      }
+      @include information_field;
     }
     .citizenship, .actual_size, .potential_size{
       width: 100%;

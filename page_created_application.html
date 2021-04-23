@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/page_created_application.css">
+</head>
+<body>
+  <input type="hidden" id="Page_class" value="client">
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <p class="logo">Usta.ru</p>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true" class="third_burger"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item category">
+              Каталог заявок
+            </a>
+
+            <a class="navbar-item category">
+              Каталог бригад
+            </a>
+
+            <a class="navbar-item category">
+              Блог
+            </a>
+            <div class="vertical_line_category"></div>
+            <a class="navbar-item category my_application">
+              Мои заявки
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+              <div class="buttons" style="margin-right: 0;">
+                <a class="button search">
+                  Создать заявку
+                </a>
+                <div class="vertical_line"></div>
+                <a class="button message">
+                  <img src="./img/icons/message_icon.svg" alt="">
+                </a>
+                <a class="button avatar">
+                  <img src="./img/components/avatars/avatar_client.png" alt="">
+                </a>
+                <div class="dropdown is-right" id="dropdown1">
+                  <div class="dropdown-trigger">
+                    <button class="button header_selector" aria-haspopup="true" aria-controls="dropdown-menu3" id="header_selector">
+                      <img src="./img/icons/noactive_arrow.svg" alt="" id="header_arrow">
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Мои заявки</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/pen.svg" alt="">
+                        <p>Профиль</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/user.svg" alt="">
+                        <p>Моя страница</p>
+                      </a>
+                      <a href="#" class="dropdown-item header_dropdown">
+                        <img src="./img/icons/wallet.svg" alt="">
+                        <p>Пополнить баланс</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="main_navigation">
+        <a href="#" class="main">Главная</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="first_arrow">
+        <a href="#" class="application">Каталог заявок</a>
+        <img src="./img/icons/navigation_arrow.svg" alt="" class="second_arrow">
+        <a href="#" class="profile">Название заявки</a>
+      </div>
+
+      <div class="company_info">
+        <div class="logo">
+          <img src="./img/components/logos/company_logo.png" alt="">
+        </div>
+        <div class="information">
+          <p class="title">ОАО Технострой</p>
+          <div class="verification">
+            <div class="verification1">
+              <img src="./img/my_applications/verified_dark.svg" alt="">
+              <p>Проверенная компания</p>
+            </div>
+            <div class="verification2">
+              <img src="./img/my_applications/verified_light.svg" alt="">
+              <p>Системообразующая компания</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="description_block">
+        <div class="main_title">
+          <div class="title">Название заявки</div>
+        </div>
+        <div class="location">
+          <div class="icon">
+            <img src="./img/client_profile/locatin.svg" alt="">
+          </div>
+          <div class="text">
+            <p class="title_city">Город</p>
+            <p class="city">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="description_text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="fields">
+          <div class="type">
+            <p class="title">Тип работ</p>
+            <p class="text">Монтаж кирпичной кладки</p>
+          </div>
+          <div class="quantity">
+            <p class="title">Количество</p>
+            <p class="text">10 000 м3</p>
+          </div>
+          <div class="cash">
+            <p class="title">Стоимость</p>
+            <p class="text">500 000 рублей за весь объем работ</p>
+          </div>
+        </div>
+        <div class="reaction">
+          <a class="button search">
+            Откликнуться на заявку
+          </a>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="general_information_block">
+        <div class="title">
+          <p>Требования к бригаде</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <p class="title">Специализация</p>
+            <p class="text">Бригада Металлистов, Бригада Отделочников</p>
+          </div>
+          <div class="field">
+            <p class="title">Необходимое количество человек</p>
+            <p class="text">0т 100 до 200 человек</p>
+          </div>
+          <div class="field">
+            <p class="title">Разнорабочие</p>
+            <p class="text">Должны быть в составе бригады</p>
+          </div>
+          <div class="field">
+            <p class="title">Организация работы вахтовым методом</p>
+            <p class="text">Да</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="general_information_block">
+        <div class="title">
+          <p>Условия работы</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <p class="title">Инструменты</p>
+            <p class="text">Предоставляется ручной инструмент</p>
+          </div>
+          <div class="field">
+            <p class="title">Проживание</p>
+            <p class="text">Предоставляется на объекте</p>
+          </div>
+          <div class="field">
+            <p class="title">Одежда</p>
+            <p class="text">Не предоставляется</p>
+          </div>
+          <div class="field">
+            <p class="title">Транспортировка</p>
+            <p class="text">Обсуждаемо</p>
+          </div>
+          <div class="field">
+            <p class="title">Питание</p>
+            <p class="text">Не предоставляется</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="general_information_block">
+        <div class="title">
+          <p>Оплата</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <p class="title">Стоимость работ</p>
+            <p class="text">500 000 рублей за весь объем работ</p>
+          </div>
+          <div class="field">
+            <p class="title">Авансирование</p>
+            <p class="text">Предоставляется через 7 дней после начала работы</p>
+          </div>
+          <div class="field">
+            <p class="title">Оплата работ</p>
+            <p class="text">1 раз в 22 дня</p>
+          </div>
+          <div class="field">
+            <p class="title">Тип оплаты</p>
+            <p class="text">Оплата на юридическое лицо</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="general_information_block">
+        <div class="title">
+          <p>Информация об объекте</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <p class="title">Название объекта</p>
+            <p class="text">ЖК “Близакие люди”</p>
+          </div>
+          <div class="field">
+            <p class="title">Адрес объекта</p>
+            <p class="text">Санкт-Петербург, Невский проспект, д.18, корпус 1</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="content" id="content">
+        <img src="./img/page_created_application/1.png" alt="">
+        <img src="./img/page_created_application/2.png" alt="">
+        <img src="./img/page_created_application/3.png" alt="">
+        <img src="./img/page_created_application/4.png" alt="">
+      </div>
+
+      <div class="slider" id="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div><img src="./img/page_created_application/1.png" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div><img src="./img/page_created_application/2.png" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div><img src="./img/page_created_application/3.png" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div><img src="./img/page_created_application/4.png" alt=""></div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+      </div>
+
+      <div class="last_button">
+        <a class="button search">
+          Откликнуться на заявку
+        </a>
+      </div>
+  </main>
+  <footer>
+    <div class="first_footer_block">
+      <div class="container">
+        <div class="footer_content">
+          <div class="first_footer_block_column1">
+            <p class="footer_logo">Usta.ru</p>
+            <p class="footer_context">2021 © Все права защишены</p>
+          </div>
+          <div class="first_footer_block_column2">
+            <a>
+              Каталог заявок
+            </a>
+            <a>
+              Каталог бригад
+            </a>
+            <a>
+              Блог
+            </a>
+            <a>
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="first_footer_block_column3">
+            <div class="first_context_block">
+              <p class="first_context">Задать вопрос</p>
+              <p class="second_context">8 495 777-77-77</p>
+            </div>
+            <div>
+              <p class="first_context">Написать нам</p>
+              <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer_block">
+      <p>Разработка дизайна сайта — WebVibe</p>
+    </div>
+  </footer>
+</body>
+<script src="./js/header.js"></script>
+<script src="./js/slider.js"></script>
+</html>

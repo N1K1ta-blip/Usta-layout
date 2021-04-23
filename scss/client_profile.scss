@@ -1,25 +1,13 @@
 @import "header_footer";
+@import "main_navigation";
 @import "fonts";
 
 main{
   padding: 30px 0;
 }
-.main_navigation{
-  display: flex;
-  .main, .application{
-    @include font1;
-    color: #273142;
-    margin-right: 10px;
-  }
-  .application{
-    margin-left: 10px;
-  }
-  .profile{
-    @include font1;
-    color: #BEC0C2;
-    margin-left: 10px;
-  }
-}
+
+@include three_param;
+@include three_param_2;
 
 .main_title{
   margin-top: 45px;
@@ -184,18 +172,6 @@ main{
 @media (max-width: 1087px) {
   main{
     padding: 30px 23px;
-  }
-  .main_navigation{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    .second_arrow{
-      transform: rotate(180deg);
-      margin-right: -2px;
-    }
-    .profile, .main, .first_arrow{
-      display: none;
-    }
   }
   .main_title{
     margin-top: 45px;
