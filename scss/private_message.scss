@@ -1,0 +1,231 @@
+@import "header_footer";
+@import "main_navigation";
+@import "fonts";
+@import "input";
+@import "information_field";
+
+main{
+  padding: 30px 0;
+}
+
+@include two_param;
+
+.firt_block{
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 34px;
+  .title{
+    width:40%;
+    color: #273142;
+    @include font2;
+  }
+  .serch_field{
+    width: 100%;
+    margin-top: -5px;
+    .new_password_input{
+      position: relative;
+      width: 100%;
+      @include input;
+    }
+  }
+}
+
+.message_block{
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  .time{
+    color: #DCDEDF;
+    @include font4;
+    margin-top: auto;
+  }
+  .application{
+    display: flex;
+    .logo{
+      width: 63px;
+      height: 63px;
+      border: 1px dashed #F4F4F4;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    .text{
+      margin-left: 15px;
+      .author{
+        color: #273142;
+        @include font9;
+        margin-top: 7px;
+      }
+      .message{
+        margin: 0;
+        margin-top: 7px;
+        color: #808896;
+        @include font3;
+        max-width: 450px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.noread{
+  background: linear-gradient(84.48deg, #61ADE6 0%, #8FCBF6 100%);
+  box-shadow: 0px 2px 15px rgba(97, 173, 229, 0.3);
+  border-radius: 6px;
+  transition: .3s ease;
+  &:hover{
+    background: linear-gradient(84.48deg, #fff 0%, #fff 0%);
+    box-shadow: none;
+    .time{
+      color: #DCDEDF;
+      @include font4;
+      margin-top: auto;
+    }
+    .application{
+      display: flex;
+      .logo{
+        width: 63px;
+        height: 63px;
+        border: 1px dashed #F4F4F4;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+      .text{
+        margin-left: 15px;
+        .author{
+          color: #273142;
+          @include font9;
+          margin-top: 7px;
+        }
+        .message{
+          margin: 0;
+          margin-top: 7px;
+          color: #808896;
+          @include font3;
+          max-width: 450px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .time{
+    color: #FFFFFF;
+  }
+  .application{
+    display: flex;
+    .logo{
+      width: 63px;
+      height: 63px;
+      border: none;
+      img{
+        border-radius: 4px;
+      }
+    }
+    .text{
+      margin-left: 15px;
+      .author{
+        color: #fff;
+        @include font9;
+        margin-top: 7px;
+      }
+      .message{
+        margin: 0;
+        margin-top: 7px;
+        color: #fff;
+        background: none;
+        @include font3;
+        max-width: 450px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.castom_pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  div{
+    padding: 10px 17px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #BEC0C2;
+    margin: 0 12px;
+    &:hover{
+      cursor: pointer;
+      color: #BEC0C2;
+    }
+  }
+  .active{
+    color: #61ADE5;
+    border: 1px solid #61ADE5;
+    box-sizing: border-box;
+    border-radius: 22px;
+    padding: 9px 16px;
+  }
+  .left_arrow{
+    transition: .3s ease;
+    &:hover{
+      cursor: pointer;
+      filter: contrast(10%);
+    }
+  }
+  .right_arrow{
+    transform: rotate(180deg);
+    transition: .3s ease;
+    &:hover{
+      cursor: pointer;
+      filter: contrast(10%);
+    }
+  }
+}
+@media (max-width: 1087px){
+  main{
+    padding: 30px 23px;
+  }
+  @include two_param_2;
+
+  .firt_block{
+    margin-top: 50px;
+    flex-direction: column;
+    .title{
+      @include font2_2;
+      width: 100%;
+    }
+    .serch_field{
+      margin-top: 10px;
+    }
+  }
+
+  .message_block{
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    .time{
+      color: #DCDEDF;
+      @include font4;
+      margin-top: auto;
+    }
+    .application{
+      .text{
+        .message{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
