@@ -6,6 +6,14 @@ function Category(e) {
   e.classList.add('active')
 }
 
+function Search(e) {
+  let value = Number(e.getAttribute('data-value'))
+  e.innerHTML = "Перейти в рабочую область"
+  e.classList.remove('search')
+  e.classList.add('top')
+  document.getElementsByClassName('application_info')[value].style.border = '1px dashed #6CD196'
+}
+
 function Pagination(e) {
   let pagin = document.querySelectorAll('.pagin');
   for (var i = 0; i < pagin.length; i++) {
