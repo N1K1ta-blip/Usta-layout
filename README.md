@@ -1,6 +1,17 @@
 # Usta-layout
 <h4>Готовые страницы</h4>
 <ul>
+  <li>Главная - home</li>
+  <li>Выбор типа регистрации - registration_type</li>
+  <li>Страница авторизации (заказчик) - log-in_client</li>
+  <li>Страница регистрации (заказчик) - reg_client</li>
+  <li>Страница авторизации (исполнитель) - log-in_brigade</li>
+  <li>Страница регистрации (иаполнитель) - первоначальная - reg_brigade</li>
+  <li>Страница регистрации (иаполнитель) - проверочный код - reg_brigade_code</li>
+  <li>Страница регистрации (иаполнитель) - шаг 1 - create_account_brigade_page1</li>
+  <li>Страница регистрации (иаполнитель) - шаг 2 - create_account_brigade_page2</li>
+  <li>Мои заявки (заказчик) - my_applications_client</li>
+
   <li>Мои заявки (исполнитель) - my_applications_exutor</li>
   <li>Профиль (заказчик) - client_profile</li>
   <li>Профиль (исполнитель) - executor_profile</li>
