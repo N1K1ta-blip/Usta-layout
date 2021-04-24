@@ -38,6 +38,9 @@
     top: -7px;
     left: 20px;
   }
+    input:focus ~ p,input:valid ~ p{
+      display: block;
+    }
 }
 
 @mixin input2{

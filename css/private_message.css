@@ -465,6 +465,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.firt_block .serch_field .new_password_input input:focus ~ p, .firt_block .serch_field .new_password_input input:valid ~ p {
+  display: block;
+}
 
 .message_block {
   padding: 10px;

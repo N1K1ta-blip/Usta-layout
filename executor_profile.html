@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/executor_profile.css">
 </head>
-<body onclick="Hid_input(this)" data-value=''>
+<body >
   <input type="hidden" id="Page_class" value="executor">
   <label for=""></label>
   <header>
@@ -160,15 +160,25 @@
           <div class="new_password_block">
             <p class="new_password_block_title">Изменить пароль</p>
             <div class="new_password_block_inputs">
-              <div class="new_password_input" style="margin-right: 15px;" id="new_password_1" onclick="Input(this)">
+              <!-- <div class="new_password_input" style="margin-right: 15px;" id="new_password_1" onclick="Input(this)">
                 <input type="password" name="" value="" data-value='new_password_1' id="input_new_password_1" class="">
                 <label for="new_password_1" data-value='new_password_1'>Введите новый пароль</label>
                 <p id="show_button" onclick="Type()">Показать</p>
-              </div>
-              <div class="new_password_input" id="new_password_2" onclick="Input2(this)">
-                <input type="password" name="" value="" data-value='new_password_2' id="input_new_password_2">
+              </div> -->
+              <!-- <div class="new_password_input" id="new_password_2" onclick="Input2(this)">
+                <input type="password" name="" value="" data-value='new_password_2' >
                 <label for="new_password_2" data-value='new_password_2'>Введите новый пароль</label>
                 <p id="show_button2" onclick="Type2()">Показать</p>
+              </div> -->
+              <div class="new_password_input" style="margin-right: 15px;">
+                <input type="password"  data-value='new_password_1' id="input_new_password_1" required>
+                <label for="new_password_1" data-value='new_password_1' >Введите новый пароль</label>
+                <p id="show_button2" сдclass="active" onclick="Type()">Показать</p>
+              </div>
+              <div class="new_password_input">
+                <input type="password"  data-value='new_password_2' id="input_new_password_2" required>
+                <label for="new_password_2" data-value='new_password_2' >Введите новый пароль</label>
+                <p id="show_button2" сдclass="active" onclick="Type2()">Показать</p>
               </div>
               <a class="button search">
                 Изменить пароль

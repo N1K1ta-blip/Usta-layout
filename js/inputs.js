@@ -66,14 +66,14 @@ function Type2(){
 }
 function Type(){
   let input_new_password = document.getElementById('input_new_password_1')
-  if (type2 == 0) {
+  if (type == 0) {
     input_new_password.type = 'text'
-    type2 ++
+    type ++
     return
   }
-  if (type2 == 1) {
+  if (type == 1) {
     input_new_password.type = 'password'
-    type2 --
+    type --
   }
 }
 

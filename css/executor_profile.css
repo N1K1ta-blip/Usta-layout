@@ -1108,13 +1108,15 @@ main {
 .new_password_block .new_password_block_inputs .new_password_input {
   position: relative;
   width: 100%;
+  position: relative;
+  width: 100%;
+  margin-top: 17px;
 }
 .new_password_block .new_password_block_inputs .new_password_input input {
   background: #F9F9F9;
   border-radius: 6px;
-  width: 100%;
-  margin-top: 19px;
   border: 0;
+  width: 100%;
   padding: 16px 20px;
 }
 .new_password_block .new_password_block_inputs .new_password_input input.active {
@@ -1124,7 +1126,7 @@ main {
   outline: none;
   padding: 14px 20px;
 }
-.new_password_block .new_password_block_inputs .new_password_input input:focus {
+.new_password_block .new_password_block_inputs .new_password_input input:focus, .new_password_block .new_password_block_inputs .new_password_input input:valid {
   background: #FFFFFF;
   border: 1px solid #EEF0F1;
   box-sizing: border-box;
@@ -1139,9 +1141,23 @@ main {
   line-height: 18px;
   color: #BEC0C2;
   position: absolute;
-  top: 35px;
+  top: 15px;
   left: 20px;
   transition: 0.3s ease;
+}
+.new_password_block .new_password_block_inputs .new_password_input input:focus ~ label, .new_password_block .new_password_block_inputs .new_password_input input:valid ~ label {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CDD0D3;
+  background-color: white;
+  top: -7px;
+  left: 20px;
+}
+.new_password_block .new_password_block_inputs .new_password_input input:focus ~ p, .new_password_block .new_password_block_inputs .new_password_input input:valid ~ p {
+  display: block;
 }
 .new_password_block .new_password_block_inputs .new_password_input p {
   font-family: Gilroy;
@@ -1151,7 +1167,7 @@ main {
   line-height: 18px;
   color: #273142;
   position: absolute;
-  top: 35px;
+  top: 15px;
   right: 20px;
   z-index: 9999;
   transition: 0.3s ease;

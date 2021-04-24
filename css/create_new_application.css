@@ -6617,6 +6617,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.new_password_input input:focus ~ p, .new_password_input input:valid ~ p {
+  display: block;
+}
 
 .page_title {
   margin-top: 45px;
@@ -7261,6 +7264,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.object_infopmation_block .inputs_block .new_password_input input:focus ~ p, .object_infopmation_block .inputs_block .new_password_input input:valid ~ p {
+  display: block;
+}
 .object_infopmation_block .inputs_block .adress {
   margin-left: 30px;
 }
@@ -7473,6 +7479,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.required_number_people .new_password_block_inputs .new_password_input input:focus ~ p, .required_number_people .new_password_block_inputs .new_password_input input:valid ~ p {
+  display: block;
+}
 .required_number_people .new_password_block_inputs .new_password_input p {
   font-family: Gilroy;
   font-style: normal;
@@ -7606,6 +7615,9 @@ main {
   background-color: white;
   top: -7px;
   left: 20px;
+}
+.handymen .new_password_input input:focus ~ p, .handymen .new_password_input input:valid ~ p, .completion_date .new_password_input input:focus ~ p, .completion_date .new_password_input input:valid ~ p, .advance_payment .new_password_input input:focus ~ p, .advance_payment .new_password_input input:valid ~ p, .payment_for_work .new_password_input input:focus ~ p, .payment_for_work .new_password_input input:valid ~ p {
+  display: block;
 }
 .handymen .radios, .completion_date .radios, .advance_payment .radios, .payment_for_work .radios {
   display: flex;
@@ -7791,6 +7803,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.add_job_type .info .type_work .new_password_input input:focus ~ p, .add_job_type .info .type_work .new_password_input input:valid ~ p {
+  display: block;
+}
 .add_job_type .info .type_work .new_password_input p {
   font-family: Gilroy;
   font-style: normal;
@@ -7861,6 +7876,9 @@ main {
   background-color: white;
   top: -7px;
   left: 20px;
+}
+.add_job_type .info .quantity .new_password_input input:focus ~ p, .add_job_type .info .quantity .new_password_input input:valid ~ p, .add_job_type .info .cash .new_password_input input:focus ~ p, .add_job_type .info .cash .new_password_input input:valid ~ p {
+  display: block;
 }
 .add_job_type .info .quantity .new_password_input p, .add_job_type .info .cash .new_password_input p {
   font-family: Gilroy;
@@ -8273,6 +8291,9 @@ main {
     top: -7px;
     left: 20px;
   }
+  .object_infopmation_block .inputs_block .new_password_input input:focus ~ p, .object_infopmation_block .inputs_block .new_password_input input:valid ~ p {
+    display: block;
+  }
   .object_infopmation_block .inputs_block .adress {
     margin-top: 15px;
     margin-left: 0;
@@ -8433,6 +8454,9 @@ main {
     top: -7px;
     left: 20px;
   }
+  .add_job_type .info .type_work .new_password_input input:focus ~ p, .add_job_type .info .type_work .new_password_input input:valid ~ p {
+    display: block;
+  }
   .add_job_type .info .quantity, .add_job_type .info .cash {
     margin-top: 20px;
     margin-left: 0;
@@ -8484,6 +8508,9 @@ main {
     background-color: white;
     top: -7px;
     left: 20px;
+  }
+  .add_job_type .info .quantity .new_password_input input:focus ~ p, .add_job_type .info .quantity .new_password_input input:valid ~ p, .add_job_type .info .cash .new_password_input input:focus ~ p, .add_job_type .info .cash .new_password_input input:valid ~ p {
+    display: block;
   }
   .add_job_type .info .quantity .new_password_input p, .add_job_type .info .cash .new_password_input p {
     font-family: Gilroy;

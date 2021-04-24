@@ -3332,6 +3332,9 @@ main {
   top: -7px;
   left: 20px;
 }
+.new_password_input input:focus ~ p, .new_password_input input:valid ~ p {
+  display: block;
+}
 
 .page_title {
   margin-top: 45px;

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usta.ru</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/create_account_brigade.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <p class="logo">Usta.ru</p>
+                </a>
+        
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                </div>
+        
+                <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item category">
+                    Каталог заявок
+                    </a>
+        
+                    <a class="navbar-item category">
+                    Каталог бригад
+                    </a>
+        
+                    <a class="navbar-item category">
+                    Блог
+                    </a>
+                </div>
+        
+                <div class="navbar-end">
+                    <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+                    <div class="buttons" style="margin-right: 0;">
+                        <a class="button search">
+                        Разместить задание
+                        </a>
+                        <a class="button sign-in" href="#"> 
+                        Войти
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container"> 
+                <div class="main_navigation">
+                    <a href="#" class="main">Выбор типа регистрации </a>
+                    <img src="./img/icons/navigation_arrow.svg" alt="">
+                    <a href="#" class="registration none-mob"> Регистрация </a>
+                </div>
+                <div class="title_text">
+                    Регистрация
+                </div>
+                <div class="numbers">
+                    <div class="page_number_discription active">
+                    <div class="page_number"><img src="./img/create_application/done_page.svg" alt=""></div>
+                    </div>
+                    <div class="dashed_line active"></div>
+                    <div class="page_number_discription active">
+                    <div class="page_number">02</div>
+                    </div>
+                </div>
+
+                <div class="numbers_descriptions">
+                    <div class="page_description active" style="margin-left: 0;">
+                    <p class="page_description_title">Общая информация</p>
+                    </div>
+                    <div class="page_description active">
+                    <p class="page_description_title">Условия работы</p>
+                    </div>
+                </div>
+                <div class="main_block">
+                    <div class="region">
+                        <div class="region_text">
+                            <div class="check_title size-low">
+                                Регион для работы
+                            </div>
+                            <div class="check_subtitle">
+                                заполните минимум одно поле
+                            </div>
+                        </div>
+                        <div class="region_form">
+                            <div class="row">
+                                <select class="select-2" name="country" id="country">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <label for="country">Страна</label>
+                            </div>
+                            <div class="row">
+                                <select class="select-2" name="district" id="district">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <label for="district">Округ</label>
+                            </div>
+                            <div class="row">
+                                <select class="select-2" name="region" id="region">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <label for="region">Регион</label>
+                            </div>
+                            <div class="row">
+                                <select class="select-2" name="city" id="city">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <label for="city">Город</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="live">
+                        <div class="check_title" style="margin-bottom: 15px;">
+                            Проживание
+                        </div>
+                        <form class="live_form">
+                            <div class="radio_block">
+                              <input class="custom-radio" name="accommodation" type="radio" id="one2" value="green" onclick="Check2(this)">
+                              <label for="one2">Предоставляется на объекте</label>
+                            </div>
+                            <div class="radio_block">
+                              <input class="custom-radio" name="accommodation" type="radio" id="two2" value="green" onclick="Check2(this)">
+                              <label for="two2">Предоставляется за пределами объекты</label>
+                            </div>
+                            <div class="radio_block">
+                              <input class="custom-radio" name="accommodation" type="radio" id="three2" value="green" onclick="Check2(this)">
+                              <label for="three2">Не предоставляется</label>
+                            </div>
+                            <div class="radio_block">
+                              <input class="custom-radio" name="accommodation" type="radio" id="four2" value="green" onclick="Check2(this)">
+                              <label for="four2">Обсуждаемо</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="hr">
+                    <div class="tools">
+                        <div class="check_title" style="margin-bottom: 15px;">
+                            Наличие своих инструментов
+                        </div>
+                        <form class="tools_form">
+                            <div class="radio_block">
+                                <input class="custom-radio" name="tool" type="radio" id="one" value="green" onclick="Check(this)">
+                                <label for="one">Электрический инструмент</label>
+                            </div>
+                            <div class="radio_block">
+                                <input class="custom-radio" name="tool" type="radio" id="two" value="green" onclick="Check(this)">
+                                <label for="two">Ручной инструмент инструмент</label>
+                            </div>
+                            <div class="radio_block">
+                                <input class="custom-radio" name="tool" type="radio" id="three" value="green" onclick="Check(this)">
+                                <label for="three">Отсутствует</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="hr">
+                    <div class="pay">
+                        <div class="check_title" style="margin-bottom: 15px;">
+                            Наличие своих инструментов
+                        </div>
+                        <form class="pay_form">
+                            <div class="radio_block">
+                                <input class="custom-radio" name="pay" type="radio" id="one3" value="green" onclick="Check(this)">
+                                <label for="one3">Да</label>
+                            </div>
+                            <div class="radio_block">
+                                <input class="custom-radio" name="pay" type="radio" id="two3" value="green" onclick="Check(this)">
+                                <label for="two3">Нет</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="hr">
+                    <div class="button search next">
+                        Опубликовать в каталоге бригад
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="first_footer_block">
+            <div class="container">
+                <div class="footer_content">
+                <div class="first_footer_block_column1">
+                    <p class="footer_logo">Usta.ru</p>
+                    <p class="footer_context">2021 © Все права защишены</p>
+                </div>
+                <div class="first_footer_block_column2">
+                    <a href="#" class="footer_a">
+                    Каталог заявок
+                    </a>
+                    <a href="#" class="footer_a">
+                    Каталог бригад
+                    </a>
+                    <a href="#" class="footer_a">
+                    Блог
+                    </a>
+                    <a href="#" class="footer_a">
+                    Пользовательское соглашение
+                    </a>
+                </div>
+                <div class="first_footer_block_column3">
+                    <div class="first_context_block">
+                    <p class="first_context">Задать вопрос</p>
+                    <p class="second_context">8 495 777-77-77</p>
+                    </div>
+                    <div>
+                    <p class="first_context">Написать нам</p>
+                    <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="second_footer_block">
+            <p>Разработка дизайна сайта — WebVibe</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

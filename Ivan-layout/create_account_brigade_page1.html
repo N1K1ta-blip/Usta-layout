@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usta.ru</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/create_account_brigade.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <p class="logo">Usta.ru</p>
+                </a>
+        
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                </div>
+        
+                <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item category">
+                    Каталог заявок
+                    </a>
+        
+                    <a class="navbar-item category">
+                    Каталог бригад
+                    </a>
+        
+                    <a class="navbar-item category">
+                    Блог
+                    </a>
+                </div>
+        
+                <div class="navbar-end">
+                    <div class="navbar-item" id="second_half_header" style="padding-right: 0;">
+                    <div class="buttons" style="margin-right: 0;">
+                        <a class="button search">
+                        Разместить задание
+                        </a>
+                        <a class="button sign-in" href="#"> 
+                        Войти
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main_navigation">
+                    <a href="#" class="main">Выбор типа регистрации </a>
+                    <img src="./img/icons/navigation_arrow.svg" alt="">
+                    <a href="#" class="registration none-mob"> Регистрация </a>
+                </div>
+                <div class="title_text">
+                    Регистрация
+                </div>
+                <div class="numbers">
+                    <div class="page_number_discription active">
+                    <div class="page_number">01</div>
+                    </div>
+                    <div class="dashed_line"></div>
+                    <div class="page_number_discription">
+                    <div class="page_number">02</div>
+                    </div>
+                </div>
+            
+                <div class="numbers_descriptions">
+                    <div class="page_description active" style="margin-left: 0;">
+                    <p class="page_description_title">Общая информация</p>
+                    </div>
+                    <div class="page_description">
+                    <p class="page_description_title">Условия работы</p>
+                    </div>
+                </div>
+                <div class="main_block">
+                    <div class="data">
+                        <div class="data_text">
+                            Личные данные
+                        </div>
+                        <form action="#" class="data_form">
+                            <div class="row">
+                                <input type="text" class="input" name="surname" id="surname" required>
+                                <label for="surname">Фамилия</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="input" name="name" id="name" required>
+                                <label for="name">Имя</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="input" name="patronymic" id="patronymic" required>
+                                <label for="patronymic">Отчество</label>
+                            </div>
+                            <div class="row">
+                                <select class="select" name="citizenship" id="citizenship">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <label for="citizenship">Гражданство</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="hr">
+                    <div class="check-block">
+                        <div class="check_text">
+                            <div class="check_title">
+                                Тип бригады
+                            </div>
+                            <div class="check_subtitle">
+                                выберите не более 2-х типов
+                            </div>
+                        </div>
+                        <div class="checkboxes"> 
+                            <div class="first_col">
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+                                <label for="bur">Буровики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="ovik" name="happy" value="yes" onclick="Check(this)">
+                                <label for="ovik">Вентиляционщики (ОВиК)</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="gidr" name="happy" value="yes" onclick="Check(this)">
+                                <label for="gidr">Гидроизоляционщики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="gryz" name="happy" value="yes" onclick="Check(this)">
+                                <label for="gryz">Грузчики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="road" name="happy" value="yes" onclick="Check(this)">
+                                <label for="road">Дорожники (Благоустройство)</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="stone" name="happy" value="yes" onclick="Check(this)">
+                                <label for="stone">Каменщики</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="second_col">
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="kr" name="happy" value="yes" onclick="Check(this)">
+                                <label for="kr">Кровельщики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="mb" name="happy" value="yes" onclick="Check(this)">
+                                <label for="mb">Мебельщики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="mtl" name="happy" value="yes" onclick="Check(this)">
+                                <label for="mtl">Металлисты</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="ml" name="happy" value="yes" onclick="Check(this)">
+                                <label for="ml">Монолитчики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="st" name="happy" value="yes" onclick="Check(this)">
+                                <label for="st">Монтажники внешних сетей</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="window" name="happy" value="yes" onclick="Check(this)">
+                                <label for="window">Монтажники окон и светопроз</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="third_col">
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="happy2" name="happy" value="yes" onclick="Check(this)">
+                                <label for="happy2">Общестроители-универсалы</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="happy3" name="happy" value="yes" onclick="Check(this)">
+                                <label for="happy3">Озеленители</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="otdel" name="happy" value="yes" onclick="Check(this)">
+                                <label for="otdel">Отделочники</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="carpent" name="happy" value="yes" onclick="Check(this)">
+                                <label for="carpent">Плотники, Столяры</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="worker" name="happy" value="yes" onclick="Check(this)">
+                                <label for="worker">Разнорабочие, Подсобники</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="plumber" name="happy" value="yes" onclick="Check(this)">
+                                <label for="plumber">Сантехники, Слесари</label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="fourth_col">
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="happy24" name="happy" value="yes" onclick="Check(this)">
+                                <label for="happy24">Сварщики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="happy25" name="happy" value="yes" onclick="Check(this)">
+                                <label for="happy25">Уборщики/Клининг</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="facade" name="happy" value="yes" onclick="Check(this)">
+                                <label for="facade">Фасадчики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="electrician" name="happy" value="yes" onclick="Check(this)">
+                                <label for="electrician">Электрики</label>
+                                </div>
+                            </div>
+                            <div class="col_element">
+                                <div class="check">
+                                <input type="checkbox" class="custom-checkbox" id="other" name="happy" value="yes" onclick="Check(this)">
+                                <label for="other">Другие</label>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="place_and_type">
+                        <div class="place_and_type_text">
+                            Личные данные
+                        </div>
+                        <form class="place_and_type_form">
+                            <div class="columns">
+                                <div class="column is-half">
+                                    <div class="row">
+                                        <input type="text" class="input" name="place" id="place" required>
+                                        <label for="place">Текущее местоположение бригады</label>
+                                    </div>
+                                </div>
+                                <div class="column population">
+                                    <div class="row">
+                                        <input type="text" class="input" name="moment" id="moment" required>
+                                        <label for="moment">Текущая численность</label>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="row">
+                                        <input type="text" class="input" name="potencial" id="potencial" required>
+                                        <label for="potencial">Потенциальная численность</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                    <hr class="hr">
+                    <div class="work_exp">
+                        <div class="work_exp_text">
+                            <div class="work_exp_title">
+                                Опыт работы
+                            </div>
+                            <div class="work_exp_subtitle">
+                                необязательно
+                            </div>
+                        </div>
+                        <form class="work_exp_form">
+                            <div class="row">
+                                <input type="text" class="input" name="exp" id="exp" style="height: 200px; width: 100%;" required>
+                                <label for="exp" class="big_label" style="width: 367px;">Опишите опыт работы бригады в свободной форме</label>
+                            </div>
+                        </form>
+                    </div>
+                    <hr class="hr">
+                    <div class="downloads">
+                        <div class="photos">
+                          <div class="photo_text">
+                            <div class="photo_title">
+                                Загрузите фото
+                            </div>
+                            <div class="photo_subtitle">
+                                необязательно
+                            </div>
+                          </div>
+                          <div class="example-1">
+                            <div class="form-group">
+                                <label class="label">
+                                  <i class="material-icons"><img src="img/create_application/add_files.svg" width="50" alt="" style="margin-top: 50px;"></i>
+                                  <input type="file"> 
+                                </label>
+                            </div>
+                          </div>
+                          <div class="instruction">
+                            jpg/png не более 2 Mb
+                          </div>   
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <a href="#" class="button search next">
+                        Перейти к следующему шагу
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="first_footer_block">
+            <div class="container">
+                <div class="footer_content">
+                <div class="first_footer_block_column1">
+                    <p class="footer_logo">Usta.ru</p>
+                    <p class="footer_context">2021 © Все права защишены</p>
+                </div>
+                <div class="first_footer_block_column2">
+                    <a href="#" class="footer_a">
+                    Каталог заявок
+                    </a>
+                    <a href="#" class="footer_a">
+                    Каталог бригад
+                    </a>
+                    <a href="#" class="footer_a">
+                    Блог
+                    </a>
+                    <a href="#" class="footer_a">
+                    Пользовательское соглашение
+                    </a>
+                </div>
+                <div class="first_footer_block_column3">
+                    <div class="first_context_block">
+                    <p class="first_context">Задать вопрос</p>
+                    <p class="second_context">8 495 777-77-77</p>
+                    </div>
+                    <div>
+                    <p class="first_context">Написать нам</p>
+                    <p class="second_context" style="margin-bottom: 0;">info@usta.ru</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="second_footer_block">
+            <p>Разработка дизайна сайта — WebVibe</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/header.js"></script>
+</html>

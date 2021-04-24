@@ -1,6 +1,7 @@
 @import "header_footer";
 @import "fonts";
 @import "client_profile";
+@import "input";
 
 .modify_button{
   background: #FDFDFD;
@@ -39,43 +40,15 @@
     .new_password_input{
       position: relative;
       width: 100%;
-      input{
-        background: #F9F9F9;
-        border-radius: 6px;
-        width: 100%;
-        margin-top: 19px;
-        border: 0;
-        padding: 16px 20px;
-        // transition: .3s ease;
-        &.active{
-          background: #FFFFFF;
-          border: 1px solid #EEF0F1;
-          box-sizing: border-box;
-          outline:none;
-          padding: 14px 20px;
-        }
-        &:focus{
-          background: #FFFFFF;
-          border: 1px solid #EEF0F1;
-          box-sizing: border-box;
-          outline:none;
-          padding: 14px 20px;
-        }
-      }
-      label{
-        @include font3;
-        color: #BEC0C2;
-        position: absolute;
-        top: 35px;
-        left: 20px;
-
-        transition: .3s ease;
-      }
+      position: relative;
+      width: 100%;
+      @include input;
+      margin-top: 17px;
       p{
         @include font3;
         color: #273142;
         position: absolute;
-        top: 35px;
+        top: 15px;
         right: 20px;
         z-index: 9999;
         transition: .3s ease;
