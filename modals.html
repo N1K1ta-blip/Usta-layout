@@ -96,19 +96,536 @@
     <div class="container">
       <div class="content_block">
         <p class="title">Модальные окна</p>
-        <a class="button sorting_button" onclick="Category(this)">
+        <a class="button sorting_button open-popup1">
           Вариант создания заявки
         </a>
+        <br>
+        <a class="button sorting_button open-popup2">
+          Выбрать шаблон
+        </a>
+        <br>
+        <a class="button sorting_button open-popup3">
+          Оставить отзыв (заказчик)
+        </a>
+        <br>
+        <a class="button sorting_button open-popup4">
+          Оставить отзыв (исполнитель)
+        </a>
+        <br>
+        <a class="button sorting_button open-popup5">
+          Сопроводительное письмо - 1
+        </a>
+        <br>
+        <a class="button sorting_button open-popup5_2">
+          Сопроводительное письмо - 2
+        </a>
+        <br>
+        <a class="button sorting_button open-popup5_3">
+          Сопроводительное письмо - 3
+        </a>
+        <br>
+        <a class="button sorting_button open-popup5_4">
+          Сопроводительное письмо - 4
+        </a>
+        <br>
+        <a class="button sorting_button open-popup7">
+          Окно после регистрации бригады
+        </a>
+        <br>
+        <a class="button sorting_button open-popup7">
+          Варианты публикации
+        </a>
+        <br>
+        <a class="button sorting_button open-popup8">
+          Предложение завершить регистрацию
+        </a>
+        <br>
+        <a class="button sorting_button open-popup9">
+          Подписка на новости
+        </a>
       </div>
-    </div> 
+    </div>
   </main>
-  <div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    fghj
+  <div class="popup-bg">
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
+  <div class="popup1">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Выберите вариант создания новой заявки</p>
+      <a class="button search create_applicatuon">
+        Создать новую заявку
+      </a>
+      <a class="button create_applicatuon_button2">
+        Создать новую заявку из ранее опубликованной
+      </a>
+    </div>
+  </div>
+  <div class="popup2">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p class="title">Выберите шаблон заявки из ранее
+         опубликованных
+      </p>
+      <div class="status">
+        <div class="active request" onclick="Request(this)">
+          <p>Текущие заявки</p>
+        </div>
+        <div class="noactive request" onclick="Request(this)">
+          <p>Завершённые заявки</p>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="executor__block review">
+        <div class="executor__block_secondPart">
+          <div class="executor__block_secondPart_firstHalf">
+            <img src="./img/my_applications/organization_logo.svg" alt="">
+            <div class="rating_content">
+              <div class="rating">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/noactive_star.svg" alt="">
+                <img src="./img/my_applications/chat.svg" alt="" class="chat" style="margin-bottom: -1px;">
+                <span>72 отзыва</span>
+              </div>
+              <div class="company_content">
+                <div class="company">
+                  <p>ПАО ГК ПИК</p>
+                  <img src="./img/my_applications/verified_dark.svg" alt="" class="verified_icon">
+                  <img src="./img/my_applications/verified_light.svg" alt="" class="verified_icon">
+                </div>
+                <p class="first_secret_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  exercitation ullamco laboris nisi ut aliquip ex ea...
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="second_secret_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              incididunt ut labore et dolore magna aliqua. Ut enim ad
+              exercitation ullamco laboris nisi ut aliquip ex ea...
+            </p>
+          </div>
+          <div class="vertical_line_executor"></div>
+          <div class="executor__block_secondPart_description">
+            <div class="specialization">
+              <p class="title">Специализация</p>
+              <p class="content">Бригада Каменщиков
+                 Бригада Сварщиков
+              </p>
+            </div>
+            <div class="cost">
+              <p class="title">Стоимость работы</p>
+              <p class="content">
+                5 000 рублей/м3
+              </p>
+            </div>
+            <div class="city">
+              <p class="title">Город</p>
+              <p class="content">
+                Санкт-Петербург, Невский проспект, д.18,
+                корпус 1
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="executor__block review">
+        <div class="executor__block_secondPart">
+          <div class="executor__block_secondPart_firstHalf">
+            <img src="./img/my_applications/organization_logo.svg" alt="">
+            <div class="rating_content">
+              <div class="rating">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/active_star.svg" alt="">
+                <img src="./img/my_applications/noactive_star.svg" alt="">
+                <img src="./img/my_applications/chat.svg" alt="" class="chat" style="margin-bottom: -1px;">
+                <span>72 отзыва</span>
+              </div>
+              <div class="company_content">
+                <div class="company">
+                  <p>ПАО ГК ПИК</p>
+                  <img src="./img/my_applications/verified_dark.svg" alt="" class="verified_icon">
+                  <img src="./img/my_applications/verified_light.svg" alt="" class="verified_icon">
+                </div>
+                <p class="first_secret_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  exercitation ullamco laboris nisi ut aliquip ex ea...
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="second_secret_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              incididunt ut labore et dolore magna aliqua. Ut enim ad
+              exercitation ullamco laboris nisi ut aliquip ex ea...
+            </p>
+          </div>
+          <div class="vertical_line_executor"></div>
+          <div class="executor__block_secondPart_description">
+            <div class="specialization">
+              <p class="title">Специализация</p>
+              <p class="content">Бригада Каменщиков
+                 Бригада Сварщиков
+              </p>
+            </div>
+            <div class="cost">
+              <p class="title">Стоимость работы</p>
+              <p class="content">
+                5 000 рублей/м3
+              </p>
+            </div>
+            <div class="city">
+              <p class="title">Город</p>
+              <p class="content">
+                Санкт-Петербург, Невский проспект, д.18,
+                корпус 1
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="castom_pagination">
+        <img src="./img/icons/left_arrow.svg" alt="" class="left_arrow">
+        <div class="pagin" onclick="Pagination(this)">1</div>
+        <div class="pagin active" onclick="Pagination(this)">2</div>
+        <div class="pagin" onclick="Pagination(this)">3</div>
+        <div class="pagin" onclick="Pagination(this)">4</div>
+        <img src="./img/icons/left_arrow.svg" alt="" class="right_arrow">
+      </div>
+    </div>
+  </div>
+  <div class="popup3">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Оцените работодателя</p>
+      <div class="rating">
+        <div class="stars_icons">
+          <div class="star_icon" data-value="0" onclick="Rating(this)"></div>
+          <div class="star_icon" data-value="1" onclick="Rating(this)"></div>
+          <div class="star_icon" data-value="2" onclick="Rating(this)"></div>
+          <div class="star_icon" data-value="3" onclick="Rating(this)"></div>
+          <div class="star_icon" data-value="4" onclick="Rating(this)"></div>
+        </div>
+        <div class="rating_number">
+          <p id="rating_number">0.0</p>
+        </div>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите ваш отзыв</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отзыв
+      </a>
+    </div>
+  </div>
+  <div class="popup4">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Оцените исполнителя</p>
+      <div class="rating">
+        <div class="stars_icons">
+          <div class="star_icon star_icon2" data-value="0" onclick="Rating2(this)"></div>
+          <div class="star_icon star_icon2" data-value="1" onclick="Rating2(this)"></div>
+          <div class="star_icon star_icon2" data-value="2" onclick="Rating2(this)"></div>
+          <div class="star_icon star_icon2" data-value="3" onclick="Rating2(this)"></div>
+          <div class="star_icon star_icon2" data-value="4" onclick="Rating2(this)"></div>
+        </div>
+        <div class="rating_number">
+          <p id="rating_number2">0.0</p>
+        </div>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите ваш отзыв</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отзыв
+      </a>
+    </div>
+  </div>
+  <div class="popup5">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Сопроводительное письмо</p>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/locatin.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Текущее местоположение</p>
+          <p class="text">
+            Самара
+          </p>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/money.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Стоимость</p>
+          <p class="text">
+            5 000 руб/м3
+          </p>
+        </div>
+      </div>
+      <div class="check first_check">
+        <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+        <label for="bur">Предложить свою цену</label>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите сопроводительное письмо</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отклик
+      </a>
+    </div>
+  </div>
+  <div class="popup5_2">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Сопроводительное письмо</p>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/locatin.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Текущее местоположение</p>
+          <p class="text">
+            Самара
+          </p>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/money.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Стоимость</p>
+          <p class="text">
+            Бригадир - 50 000 руб/месяц
+          </p>
+          <p class="text">
+            Специалист - 40 000 руб/месяц
+          </p>
+        </div>
+      </div>
+      <div class="check first_check">
+        <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+        <label for="bur">Предложить свою цену</label>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите сопроводительное письмо</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отклик
+      </a>
+    </div>
+  </div>
+  <div class="popup5_3">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Сопроводительное письмо</p>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/locatin.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Текущее местоположение</p>
+          <p class="text">
+            Самара
+          </p>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="add_job_type" id="add_job_type">
+        <div class="info" id="info1">
+          <div class="cash">
+            <div class="new_password_input">
+              <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+              <label for="new_password_2" data-value='new_password_2'>Стоимость</label>
+            </div>
+          </div>
+          <div class="cash_selector">
+            <div class="quantity_select">
+              <div class="main_block">
+                <p id="current_value1">₽</p>
+                <div class="selector_arrow" data-value="1" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+              </div>
+              <div class="additionally_block">
+                <p data-value="1" onclick="OtherValue(this)">₽</p>
+                <p data-value="1" onclick="OtherValue(this)">$</p>
+                <p data-value="1" onclick="OtherValue(this)">€</p>
+              </div>
+            </div>
+            <p class="on">за</p>
+            <div class="quantity_select">
+              <div class="main_block">
+                <p id="current_value2">всю работу</p>
+                <div class="selector_arrow" data-value="2" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+              </div>
+              <div class="additionally_block">
+                <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+                <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+                <p data-value="2" onclick="OtherValue(this)">всю работу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="check second_check" style="margin-bottom: 22px;">
+        <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+        <label for="bur">Предложить свою цену</label>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите сопроводительное письмо</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отклик
+      </a>
+    </div>
+  </div>
+  <div class="popup5_4">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Сопроводительное письмо</p>
+      <div class="field">
+        <div class="icon">
+          <img src="./img/client_profile/locatin.svg" alt="">
+        </div>
+        <div class="content">
+          <p class="title">Текущее местоположение</p>
+          <p class="text">
+            Самара
+          </p>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <div class="add_job_type" id="add_job_type">
+        <div class="info" id="info2" style="width: 100%;">
+          <div class="type_work type_work2">
+            <div class="new_password_input" id="new_password_2" onclick="">
+              <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+              <label for="new_password_2" data-value='new_password_2'>Должность <span class="label_span"></span></label>
+            </div>
+          </div>
+          <div class="cash">
+            <div class="new_password_input">
+              <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+              <label for="new_password_2" data-value='new_password_2'>Оклад</label>
+            </div>
+          </div>
+          <div class="cash_selector" style="justify-content: left">
+            <div class="quantity_select">
+              <div class="main_block">
+                <p id="current_value1">₽</p>
+                <div class="selector_arrow" data-value="1" onclick="ActiveSelect(this)"><img src="./img/create_application/arrow-down.svg" alt=""></div>
+              </div>
+              <div class="additionally_block">
+                <p data-value="1" onclick="OtherValue(this)">₽</p>
+                <p data-value="1" onclick="OtherValue(this)">$</p>
+                <p data-value="1" onclick="OtherValue(this)">€</p>
+              </div>
+            </div>
+            <p class="on">в месяц</p>
+          </div>
+        </div>
+      </div>
+      <div class="check second_check" style="margin-bottom: 22px;">
+        <input type="checkbox" class="custom-checkbox" id="bur" name="happy" value="bur" onclick="Check(this)">
+        <label for="bur">Предложить свою цену</label>
+      </div>
+      <div class="new_password_input" style="height:200px">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required  style="height:200px">
+        <label for="new_password_2" data-value='new_password_2'>Напишите сопроводительное письмо</label>
+      </div>
+      <a class="button search create_applicatuon">
+      Оставить отклик
+      </a>
+    </div>
+  </div>
+  <div class="popup7">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Выберите вариант публикации вашей заявки</p>
+      <a class="button search create_applicatuon">
+        Опубликовать на Главной странице
+      </a>
+      <a class="button search create_applicatuon">
+        Опубликовать на верхних строчках Каталога Заявок
+      </a>
+      <a class="button create_applicatuon_button2">
+        Опубликовать бесплатно
+      </a>
+      <div class="line"></div>
+      <a href="#" class="application_catalog">
+        <p>Перейти в Каталог Заявок<img src="./img/icons/right_modal_arrow.svg" alt=""></p>
+      </a>
+    </div>
+  </div>
+  <div class="popup8">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p class='title'>Завершите регистрацию</p>
+      <p class="text">Завершите регистрацию, чтобы Заказчик увидел Ваш отклик</p>
+      <a class="button search create_applicatuon">
+        Завершить регистрацию
+      </a>
+    </div>
+  </div>
+  <div class="popup9">
+    <span class="close-popup ">
+      <img src="./img/icons/close.svg" alt="">
+    </span>
+    <div class="content">
+      <p>Введите адрес электронной почты для получения новых заявок</p>
+      <div class="new_password_input">
+        <input type="text"  data-value='new_password_2' id="input_new_password_2" required>
+        <label for="new_password_2" data-value='new_password_2'>Ваш e-mail</label>
+      </div>
+      <a class="button search create_applicatuon">
+        Отправить
+      </a>
+    </div>
+  </div>
   <footer>
     <div class="first_footer_block">
       <div class="container">
@@ -149,12 +666,8 @@
     </div>
   </footer>
 </body>
+<script src="./js/jquery.min.js"></script>
 <script src="./js/header.js"></script>
-<script src="./js/my_applications_executor.js"></script>
 <script src="./js/modals.js"></script>
-<script>
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('is-active')
-})
-</script>
+<script src="./js/rating.js"></script>
 </html>
